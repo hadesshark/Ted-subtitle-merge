@@ -4,8 +4,7 @@ import os
 import urllib2
 
 def GetSubtitles(talkID, languageCode):
-  subtitleUrl = "http://www.ted.com/talks/subtitles/id/%s/lang/%s" % (talkID, languageCode)
-  
+  subtitleUrl = "http://www.ted.com/talks/subtitles/id/%s/lang/%s" % (talkID, languageCode
   response = urllib2.urlopen(subtitleUrl)
   html = response.read() 
   return json.loads(html)["captions"]
@@ -115,7 +114,7 @@ if False:
     print i["duration"]
     print i["content"].encode('utf8')
     print 
-
+  exit(0)
   exit(0)
 
 print "-"*10
