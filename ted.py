@@ -4,7 +4,7 @@ import os
 import urllib2
 
 def GetSubtitles(talkID, languageCode):
-  subtitleUrl = "http://www.ted.com/talks/subtitles/id/%s/lang/%s" % (talkID, languageCode
+  subtitleUrl = "http://www.ted.com/talks/subtitles/id/%s/lang/%s" % (talkID, languageCode)
   response = urllib2.urlopen(subtitleUrl)
   html = response.read() 
   return json.loads(html)["captions"]
@@ -72,10 +72,10 @@ talkURL = "http://www.ted.com/talks/richard_st_john_s_8_secrets_of_success"
 ##talkURL = "http://www.ted.com/talks/kenneth_cukier_big_data_is_better_data"
 talkTitle = talkURL.split('/')[-1].replace('_',' ')
 
-print talkTitle
-print '\n\n'
+#print talkTitle
+#print '\n\n'
 command = "curl -s %s | grep source=facebook | awk -F '=' '{print $3}' | awk -F '&' '{print $1}'" % ( talkURL )
-talkID = '45'#os.popen(command).readlines()[0].strip()
+talkID = '49'#os.popen(command).readlines()[0].strip()
 print "talkID :", talkID
 
 
@@ -87,7 +87,7 @@ englishlanguageCode = 'en'
 engSubtitles = ResetStartTime(GetSubtitles( talkID, englishlanguageCode ))
 chineseSubtitles = ResetStartTime(GetSubtitles( talkID, chineselanguageCode ))
 #print json2srt(subtitles)
-print len(engSubtitles),len(chineseSubtitles)
+#print len(engSubtitles),len(chineseSubtitles)
 charCount = 0
 
 filteredEnglishSubtitles = []
@@ -117,7 +117,7 @@ if False:
   exit(0)
   exit(0)
 
-print "-"*10
+print "-"*20
 
 duration = 0
 isEnd = False
@@ -224,7 +224,7 @@ while idxForChineseSubtitles < lengthForChineseSubtitles:
 
 
   print englishSentence
-  print filteredChineseSubtitles[idxForChineseSubtitles]["content"].encode("utf8")
+  print #filteredChineseSubtitles[idxForChineseSubtitles]["content"].encode("utf8")
   print "\n\n"  
 
   englishSentence = ''
