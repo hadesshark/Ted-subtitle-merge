@@ -224,7 +224,7 @@ while idxForChineseSubtitles < lengthForChineseSubtitles:
 
 
   print englishSentence
-  print #filteredChineseSubtitles[idxForChineseSubtitles]["content"].encode("utf8")
+  print filteredChineseSubtitles[idxForChineseSubtitles]["content"].encode("utf8")
   print "\n\n"  
 
   englishSentence = ''
