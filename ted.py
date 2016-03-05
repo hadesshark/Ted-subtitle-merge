@@ -11,7 +11,16 @@ class TedSubtitle(object):
     self.startTime = startTime
     self.duration = duration
     self.content = content
+    self.endTime = startTime + duration
 
+
+
+
+class TedParagraph(object):
+  """docstring for ClassName"""
+  def __init__(self, arg):
+    super(TedParagraph, self).__init__()
+    self.arg = arg
 
 
 
@@ -91,8 +100,18 @@ def hasPairChar( content ):
 
   return False
 
-def endTime( obj ):
-  return obj.startTime + obj.duration
+def isNewParagraph(isStartOfParagraph, sentence):
+  maxCharInSentence = 50
+  
+  newParagraph = isStartOfParagraph
+  newParagraph = newParagraph or len(sentence) > maxCharInSentence
+  newParagraph = newParagraph and hasEvenQuotes(sentence)
+  newParagraph = newParagraph and hasContainsEndMark(sentence)
+  newParagraph = newParagraph and hasPairChar(sentence.encode('utf8'))
+  newParagraph = newParagraph and len(sentence) != 0
+  return newParagraph
+  
+
 
 talkURL = "http://www.ted.com/talks/richard_st_john_s_8_secrets_of_success"
 ##talkURL = "http://www.ted.com/talks/kenneth_cukier_big_data_is_better_data"
@@ -112,8 +131,6 @@ englishlanguageCode = 'en'
 
 engSubtitles = ResetStartTime(GetSubtitles( talkID, englishlanguageCode ))
 chineseSubtitles = ResetStartTime(GetSubtitles( talkID, chineselanguageCode ))
-#print json2srt(subtitles)
-#print len(engSubtitles),len(chineseSubtitles)
 charCount = 0
 
 filteredEnglishSubtitles = []
@@ -150,43 +167,34 @@ isEnd = False
 lastAddedIndex = 0
 durationInParagraph = 0
 startTimeInParagraph = 0
-def isNewParagraph(isStartOfParagraph, sentence):
-  maxCharInSentence = 50
-  
-  newParagraph = isStartOfParagraph
-  newParagraph = newParagraph or len(sentence) > maxCharInSentence
-  newParagraph = newParagraph and hasEvenQuotes(sentence)
-  newParagraph = newParagraph and hasContainsEndMark(sentence)
-  newParagraph = newParagraph and hasPairChar(sentence.encode('utf8'))
-  newParagraph = newParagraph and len(sentence) != 0
-  return newParagraph
-  
 
-while idxForChineseSubtitles < lengthForChineseSubtitles:
-  
-  chineseSubtitle = chineseSubtitles[idxForChineseSubtitles]
+
+
+for i in xrange(len(chineseSubtitles)):
+
+  chineseSubtitle = chineseSubtitles[i]
   
   if firstSentenceInParagraph:
     if idxForChineseSubtitles == 0:
       startTimeInParagraph = chineseSubtitle.startTime
     else:
-      startTimeInParagraph = chineseSubtitles[idxForChineseSubtitles-1].startTime
+      startTimeInParagraph = chineseSubtitles[i-1].startTime
     firstSentenceInParagraph = False
 
   if isNewParagraph(chineseSubtitle.startOfParagraph,chineseSentence):
     chineseSentence = chineseSentence.replace('\n', '')
     subtitle = TedSubtitle( True, startTimeInParagraph, durationInParagraph, chineseSentence )
     filteredChineseSubtitles.append(subtitle)
-    chineseSentence = chineseSubtitle.content #+ ' '
+    chineseSentence = chineseSubtitle.content 
+
     startTimeInParagraph = 0
     durationInParagraph = 0
     firstSentenceInParagraph = True
-    lastAddedIndex = idxForChineseSubtitles
+
+    lastAddedIndex = i
   else:
     chineseSentence += chineseSubtitle.content
-    durationInParagraph = endTime(chineseSubtitle)
-
-  idxForChineseSubtitles += 1
+    durationInParagraph = chineseSubtitle.endTime
 
 
 if lastAddedIndex < lengthForChineseSubtitles:
@@ -212,7 +220,7 @@ while idxForChineseSubtitles < lengthForChineseSubtitles:
   idxForLastEnglishSubtitles = idxForEnglishSubtitles
 
   while idxForLastEnglishSubtitles < lengthForEnglishSubtitles:
-    durationInParagraph = endTime(engSubtitles[idxForLastEnglishSubtitles])
+    durationInParagraph = engSubtitles[idxForLastEnglishSubtitles].endTime
     preDurationDifference = currentDurationDifference
     currentDurationDifference = chineseDuration - durationInParagraph
 
@@ -222,8 +230,6 @@ while idxForChineseSubtitles < lengthForChineseSubtitles:
       else:
         idxForLastEnglishSubtitles += 1
         break
-
-
 
     idxForLastEnglishSubtitles += 1
 
