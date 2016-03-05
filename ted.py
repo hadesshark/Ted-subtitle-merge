@@ -158,49 +158,65 @@ if False:
     print i.content.encode('utf8')
     print 
   exit(0)
-  exit(0)
 
 print "-"*20
 
-duration = 0
-isEnd = False
-lastAddedIndex = 0
-durationInParagraph = 0
-startTimeInParagraph = 0
 
 
 
-for i in xrange(len(chineseSubtitles)):
 
-  chineseSubtitle = chineseSubtitles[i]
-  
-  if firstSentenceInParagraph:
-    if idxForChineseSubtitles == 0:
-      startTimeInParagraph = chineseSubtitle.startTime
+
+def Merge(subtitles):
+
+  lastAddedIndex = 0
+  durationInParagraph = 0
+  startTimeInParagraph = 0
+
+
+  sentence = ''
+
+  lastAddedChar = ' '
+
+  durationInParagraph = 0
+  firstSentenceInParagraph = True
+  filteredSubtitles = []
+  for i in xrange(len(subtitles)):
+
+    subtitle = subtitles[i]
+    
+    if firstSentenceInParagraph:
+      if i == 0 or True:
+        startTimeInParagraph = subtitle.startTime
+      else:
+        startTimeInParagraph = subtitles[i-1].startTime
+      firstSentenceInParagraph = False
+
+    if isNewParagraph(subtitle.startOfParagraph,sentence):
+      sentence = sentence.replace('\n', '')
+      filteredSubtitle = TedSubtitle( True, startTimeInParagraph, durationInParagraph, sentence )
+      filteredSubtitles.append(filteredSubtitle)
+      sentence = subtitle.content 
+
+      startTimeInParagraph = 0
+      durationInParagraph = 0
+      firstSentenceInParagraph = True
+
+      lastAddedIndex = i
     else:
-      startTimeInParagraph = chineseSubtitles[i-1].startTime
-    firstSentenceInParagraph = False
-
-  if isNewParagraph(chineseSubtitle.startOfParagraph,chineseSentence):
-    chineseSentence = chineseSentence.replace('\n', '')
-    subtitle = TedSubtitle( True, startTimeInParagraph, durationInParagraph, chineseSentence )
-    filteredChineseSubtitles.append(subtitle)
-    chineseSentence = chineseSubtitle.content 
-
-    startTimeInParagraph = 0
-    durationInParagraph = 0
-    firstSentenceInParagraph = True
-
-    lastAddedIndex = i
-  else:
-    chineseSentence += chineseSubtitle.content
-    durationInParagraph = chineseSubtitle.endTime
+      sentence += subtitle.content
+      durationInParagraph = subtitle.endTime
 
 
-if lastAddedIndex < lengthForChineseSubtitles:
-  subtitle = TedSubtitle( True, startTimeInParagraph, durationInParagraph, chineseSentence )
-  filteredChineseSubtitles.append(subtitle)
 
+  if lastAddedIndex < len(subtitles):
+    subtitle = TedSubtitle( True, startTimeInParagraph, durationInParagraph, sentence )
+    filteredSubtitles.append(subtitle)
+
+  return filteredSubtitles
+
+
+
+filteredChineseSubtitles = Merge(chineseSubtitles)
 if False:
   printSubtitles(filteredChineseSubtitles)
 
