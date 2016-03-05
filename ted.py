@@ -12,7 +12,6 @@ def GetSubtitles(talkID, languageCode):
 
 def json2srt(subtitles):
 
-
   def conv(t):
     return '%02d:%02d:%02d,%03d' % (
         t / 1000 / 60 / 60,
@@ -40,6 +39,15 @@ def hasContainsEndMark(content):
       return True
 
   return False
+
+
+def printSubtitles(subtitles):
+ for i in range(len(subtitles)):
+    print subtitles[i]["startTime"]
+    print subtitles[i]["duration"]
+    print subtitles[i]["content"].encode('utf8')
+    print
+    print
 
 def ResetStartTime(arr):
   for i in range(len(arr)):
@@ -94,7 +102,7 @@ filteredEnglishSubtitles = []
 filteredChineseSubtitles = []
 englishSentence = ''
 chineseSentence = ''
-maxCharInSentence = 50
+
 lastAddedChar = ' '
 
 
@@ -124,17 +132,23 @@ isEnd = False
 lastAddedIndex = 0
 durationInParagraph = 0
 startTimeInParagraph = 0
+def isNewParagraph(isStartOfParagraph, sentence):
+  maxCharInSentence = 50
+  
+  newParagraph = isStartOfParagraph
+  newParagraph = newParagraph or len(sentence) > maxCharInSentence
+  newParagraph = newParagraph and hasEvenQuotes(sentence)
+  newParagraph = newParagraph and hasContainsEndMark(sentence)
+  newParagraph = newParagraph and hasPairChar(sentence.encode('utf8'))
+  newParagraph = newParagraph and len(sentence) != 0
+  return newParagraph
+  
+
 while idxForChineseSubtitles < lengthForChineseSubtitles:
   #idxForEnglishSubtitles = idxForChineseSubtitles
   
   chineseSubtitle = chineseSubtitles[idxForChineseSubtitles]
-  newParagraph = chineseSubtitle["startOfParagraph"]
-  newParagraph = newParagraph or len(chineseSentence) > maxCharInSentence
-  newParagraph = newParagraph and hasEvenQuotes(chineseSentence)
-  newParagraph = newParagraph and hasContainsEndMark(chineseSentence)
-  newParagraph = newParagraph and hasPairChar(chineseSentence.encode('utf8'))
-  newParagraph = newParagraph and len(chineseSentence) != 0
-
+  
 
   #print idxForEnglishSubtitles, duration, chineseSubtitle['duration']
   #print idxForChineseSubtitles, lengthForChineseSubtitles, firstSentenceInParagraph, newParagraph, chineseSentence.encode('utf8')
@@ -144,7 +158,7 @@ while idxForChineseSubtitles < lengthForChineseSubtitles:
     else:
       startTimeInParagraph = chineseSubtitles[idxForChineseSubtitles-1]["startTime"]
     firstSentenceInParagraph = False
-  if newParagraph:
+  if isNewParagraph(chineseSubtitle["startOfParagraph"],chineseSentence):
     #print startTimeInParagraph, durationInParagraph
   
     chineseSentence = chineseSentence.replace('\n', '')
@@ -174,13 +188,8 @@ if lastAddedIndex < lengthForChineseSubtitles:
   filteredChineseSubtitles.append(subtitle)
 
 if False:
-  for i in range(len(filteredChineseSubtitles)):
-    #print filteredEnglishSubtitles[i].encode('utf8')
-    print filteredChineseSubtitles[i]["startTime"]
-    print filteredChineseSubtitles[i]["duration"]
-    print filteredChineseSubtitles[i]["content"].encode('utf8')
-    print
-    print
+  printSubtitles(filteredChineseSubtitles)
+
 
   #exit(0)
 
@@ -230,15 +239,3 @@ while idxForChineseSubtitles < lengthForChineseSubtitles:
   englishSentence = ''
   idxForChineseSubtitles += 1
 
-
-
-
-
-if False:
-  for i in range(len(filteredChineseSubtitles)):
-    #print filteredEnglishSubtitles[i].encode('utf8')
-    print filteredChineseSubtitles[i]["startTime"]
-    print filteredChineseSubtitles[i]["duration"]
-    print filteredChineseSubtitles[i]["content"].encode('utf8')
-    print
-    print
