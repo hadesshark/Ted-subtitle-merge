@@ -13,15 +13,11 @@ class TedSubtitle(object):
     self.content = content
     self.endTime = startTime + duration
 
-
-
-
-class TedParagraph(object):
-  """docstring for ClassName"""
-  def __init__(self, arg):
-    super(TedParagraph, self).__init__()
-    self.arg = arg
-
+  def Description(self):
+    return '\n'.join([str(self.startTime),
+                      str(self.duration),
+                      self.content.encode('utf8'),
+                      ''])    
 
 
 
@@ -56,10 +52,10 @@ def json2srt(subtitles):
            conv(item.startTime + item.duration - 1),
            item.content)
 
-def difference( num1, num2 ):
+def Difference( num1, num2 ):
   return abs( num1 - num2 )
 
-def hasContainsEndMark(content):
+def HasContainsEndMark(content):
   if len( content) < 2:
     return False
 
@@ -71,13 +67,10 @@ def hasContainsEndMark(content):
   return False
 
 
-def printSubtitles(subtitles):
+def PrintSubtitles(subtitles):
  for i in range(len(subtitles)):
-    print subtitles[i].startTime
-    print subtitles[i].duration
-    print subtitles[i].content.encode('utf8')
-    print
-    print
+    print subtitles[i].Description()
+ 
 
 def ResetStartTime(arr):
   for i in range(len(arr)):
@@ -87,10 +80,10 @@ def ResetStartTime(arr):
 
   return arr
 
-def hasEvenQuotes( content ):
+def HasEvenQuotes( content ):
   return content.count('"') % 2 == 0 
 
-def hasPairChar( content ):
+def HasPairChar( content ):
   leftChars =  [ u'「', u'(', u'（', u'{', u'【', u'｛', u'[']
   rightChars = [ u'」', u')', u'）', u'}', u'】', u'｝', u']']
   
@@ -100,14 +93,14 @@ def hasPairChar( content ):
 
   return False
 
-def isNewParagraph(isStartOfParagraph, sentence):
+def IsNewParagraph(isStartOfParagraph, sentence):
   maxCharInSentence = 50
   
   newParagraph = isStartOfParagraph
   newParagraph = newParagraph or len(sentence) > maxCharInSentence
-  newParagraph = newParagraph and hasEvenQuotes(sentence)
-  newParagraph = newParagraph and hasContainsEndMark(sentence)
-  newParagraph = newParagraph and hasPairChar(sentence.encode('utf8'))
+  newParagraph = newParagraph and HasEvenQuotes(sentence)
+  newParagraph = newParagraph and HasContainsEndMark(sentence)
+  newParagraph = newParagraph and HasPairChar(sentence.encode('utf8'))
   newParagraph = newParagraph and len(sentence) != 0
   return newParagraph
   
@@ -131,40 +124,8 @@ englishlanguageCode = 'en'
 
 engSubtitles = ResetStartTime(GetSubtitles( talkID, englishlanguageCode ))
 chineseSubtitles = ResetStartTime(GetSubtitles( talkID, chineselanguageCode ))
-charCount = 0
-
-filteredEnglishSubtitles = []
-filteredChineseSubtitles = []
-englishSentence = ''
-chineseSentence = ''
-
-lastAddedChar = ' '
-
-
-matchedIndexsAtEnglishSubtitles = []
-
-idxForChineseSubtitles = 0
-idxForEnglishSubtitles = 0
-lengthForChineseSubtitles = len(chineseSubtitles)
-lengthForEnglishSubtitles = len(engSubtitles)
-durationTolerance = 1500
-
-durationInParagraph = 0
-firstSentenceInParagraph = True
-if False:
-  for i in engSubtitles:
-    print i.startTime
-    print i.duration
-    print i.content.encode('utf8')
-    print 
-  exit(0)
-
-print "-"*20
-
-
-
-
-
+PrintSubtitles(chineseSubtitles)
+exit(0)
 
 def Merge(subtitles):
 
@@ -172,16 +133,13 @@ def Merge(subtitles):
   durationInParagraph = 0
   startTimeInParagraph = 0
 
-
   sentence = ''
-
   lastAddedChar = ' '
 
   durationInParagraph = 0
   firstSentenceInParagraph = True
   filteredSubtitles = []
   for i in xrange(len(subtitles)):
-
     subtitle = subtitles[i]
     
     if firstSentenceInParagraph:
@@ -191,7 +149,7 @@ def Merge(subtitles):
         startTimeInParagraph = subtitles[i-1].startTime
       firstSentenceInParagraph = False
 
-    if isNewParagraph(subtitle.startOfParagraph,sentence):
+    if IsNewParagraph(subtitle.startOfParagraph, sentence):
       sentence = sentence.replace('\n', '')
       filteredSubtitle = TedSubtitle( True, startTimeInParagraph, durationInParagraph, sentence )
       filteredSubtitles.append(filteredSubtitle)
@@ -218,8 +176,11 @@ def Merge(subtitles):
 
 filteredChineseSubtitles = Merge(chineseSubtitles)
 if False:
-  printSubtitles(filteredChineseSubtitles)
+  PrintSubtitles(filteredChineseSubtitles)
 
+
+filteredEnglishSubtitles = []
+lengthForEnglishSubtitles = len(engSubtitles)
 
 idxForChineseSubtitles = 0
 idxForEnglishSubtitles = 0
@@ -244,7 +205,7 @@ while idxForChineseSubtitles < lengthForChineseSubtitles:
       if abs(preDurationDifference) < abs(currentDurationDifference):
         break
       else:
-        idxForLastEnglishSubtitles += 1
+        #idxForLastEnglishSubtitles += 1
         break
 
     idxForLastEnglishSubtitles += 1
