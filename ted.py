@@ -26,6 +26,7 @@ class TedSubtitle(object):
 
 
 
+
 def GetSubtitles(talkID, languageCode):
   subtitleUrl = "http://www.ted.com/talks/subtitles/id/%s/lang/%s" % (talkID, languageCode)
   response = urllib2.urlopen(subtitleUrl)
@@ -143,11 +144,11 @@ chineseSubtitles = ResetStartTime(GetSubtitles( talkID, chineselanguageCode ))
 
 
 def Merge(subtitles):
-
   lastAddedIndex = 0
   lastAddedChar = ' '
-  filteredSubtitles = []
+  paragraphs = []
   paragraph = TedSubtitle()
+
   for i in xrange(len(subtitles)):
 
     subtitle = subtitles[i]
@@ -160,9 +161,9 @@ def Merge(subtitles):
 
       paragraph.startOfParagraph = False
 
-    if isNewParagraph(subtitle.startOfParagraph,paragraph.content):
+    if isNewParagraph(subtitle.startOfParagraph, paragraph.content):
       paragraph.TrimNewLine()
-      filteredSubtitles.append(paragraph)
+      paragraphs.append(paragraph)
       paragraph = TedSubtitle()
       paragraph.content = subtitle.content
       lastAddedIndex = i
@@ -170,38 +171,34 @@ def Merge(subtitles):
       paragraph.content += subtitle.content
       paragraph.duration = subtitle.endTime
 
-
-
   if lastAddedIndex < len(subtitles):
-    filteredSubtitles.append(paragraph)
+    paragraphs.append(paragraph)
 
-  return filteredSubtitles
+  return paragraphs
 
 
 
 filteredChineseSubtitles = Merge(chineseSubtitles)
-if False:
-  PrintSubtitles(filteredChineseSubtitles)
 
 
 idxForChineseSubtitles = 0
 idxForEnglishSubtitles = 0
-durationInParagraph = 0
-startTimeInParagraph = 0
 lengthForChineseSubtitles = len(filteredChineseSubtitles)
-englishSentence = ''
 lengthForEnglishSubtitles = len(engSubtitles)
-while idxForChineseSubtitles < lengthForChineseSubtitles:
-  chineseDuration = filteredChineseSubtitles[idxForChineseSubtitles].duration
+paragraph = TedSubtitle()
+
+
+for chineseSubtitle in filteredChineseSubtitles:
+
   minDurationDifference = 10000
   currentDurationDifference = 0
  
   idxForLastEnglishSubtitles = idxForEnglishSubtitles
 
   while idxForLastEnglishSubtitles < lengthForEnglishSubtitles:
-    durationInParagraph = engSubtitles[idxForLastEnglishSubtitles].endTime
+    paragraph.duration = engSubtitles[idxForLastEnglishSubtitles].endTime
     preDurationDifference = currentDurationDifference
-    currentDurationDifference = chineseDuration - durationInParagraph
+    currentDurationDifference = chineseSubtitle.duration - paragraph.duration
 
     if currentDurationDifference <= 0:
       if abs(preDurationDifference) < abs(currentDurationDifference):
@@ -214,13 +211,13 @@ while idxForChineseSubtitles < lengthForChineseSubtitles:
 
 
   while idxForEnglishSubtitles < idxForLastEnglishSubtitles:
-    englishSentence += engSubtitles[idxForEnglishSubtitles].content.replace('\n',' ') + ' '
+    paragraph.content += engSubtitles[idxForEnglishSubtitles].content.replace('\n',' ') + ' '
     idxForEnglishSubtitles += 1
 
 
-  print englishSentence
-  print filteredChineseSubtitles[idxForChineseSubtitles].content.encode("utf8")
+  print paragraph.content
+  print chineseSubtitle.content.encode("utf8")
   print "\n\n"  
 
-  englishSentence = ''
+  paragraph.content = ''
   idxForChineseSubtitles += 1
