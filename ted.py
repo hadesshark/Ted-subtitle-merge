@@ -5,7 +5,7 @@ import urllib2
 
 class TedSubtitle(object):
   """docstring for TedSubtitle"""
-  def __init__(self, startOfParagraph, startTime, duration, content):
+  def __init__(self, startOfParagraph = True, startTime = 0, duration = 0, content = ''):
     super(TedSubtitle, self).__init__()
     self.startOfParagraph = startOfParagraph
     self.startTime = startTime
@@ -14,10 +14,15 @@ class TedSubtitle(object):
     self.endTime = startTime + duration
 
   def Description(self):
-    return '\n'.join([str(self.startTime),
-                      str(self.duration),
-                      self.content.encode('utf8'),
+    return '\n'.join(["startTime : " + str(self.startTime),
+                      "duration  : " + str(self.duration),
+                      "content   : " + self.content.encode('utf8'),
                       ''])    
+
+
+  def TrimNewLine(self):
+    self.content = self.content.replace('\n','')
+
 
 
 
@@ -70,7 +75,7 @@ def HasContainsEndMark(content):
 def PrintSubtitles(subtitles):
  for i in range(len(subtitles)):
     print subtitles[i].Description()
- 
+    
 
 def ResetStartTime(arr):
   for i in range(len(arr)):
@@ -93,7 +98,7 @@ def HasPairChar( content ):
 
   return False
 
-def IsNewParagraph(isStartOfParagraph, sentence):
+def isNewParagraph(isStartOfParagraph, sentence):
   maxCharInSentence = 50
   
   newParagraph = isStartOfParagraph
@@ -124,51 +129,51 @@ englishlanguageCode = 'en'
 
 engSubtitles = ResetStartTime(GetSubtitles( talkID, englishlanguageCode ))
 chineseSubtitles = ResetStartTime(GetSubtitles( talkID, chineselanguageCode ))
-PrintSubtitles(chineseSubtitles)
-exit(0)
+
+
+
+
+
+
+
+
+
+
+
+
 
 def Merge(subtitles):
 
   lastAddedIndex = 0
-  durationInParagraph = 0
-  startTimeInParagraph = 0
-
-  sentence = ''
   lastAddedChar = ' '
-
-  durationInParagraph = 0
-  firstSentenceInParagraph = True
   filteredSubtitles = []
+  paragraph = TedSubtitle()
   for i in xrange(len(subtitles)):
+
     subtitle = subtitles[i]
     
-    if firstSentenceInParagraph:
+    if paragraph.startOfParagraph:
       if i == 0 or True:
-        startTimeInParagraph = subtitle.startTime
+        paragraph.startTime = subtitle.startTime
       else:
-        startTimeInParagraph = subtitles[i-1].startTime
-      firstSentenceInParagraph = False
+        paragraph.startTime = subtitles[i-1].startTime
 
-    if IsNewParagraph(subtitle.startOfParagraph, sentence):
-      sentence = sentence.replace('\n', '')
-      filteredSubtitle = TedSubtitle( True, startTimeInParagraph, durationInParagraph, sentence )
-      filteredSubtitles.append(filteredSubtitle)
-      sentence = subtitle.content 
+      paragraph.startOfParagraph = False
 
-      startTimeInParagraph = 0
-      durationInParagraph = 0
-      firstSentenceInParagraph = True
-
+    if isNewParagraph(subtitle.startOfParagraph,paragraph.content):
+      paragraph.TrimNewLine()
+      filteredSubtitles.append(paragraph)
+      paragraph = TedSubtitle()
+      paragraph.content = subtitle.content
       lastAddedIndex = i
     else:
-      sentence += subtitle.content
-      durationInParagraph = subtitle.endTime
+      paragraph.content += subtitle.content
+      paragraph.duration = subtitle.endTime
 
 
 
   if lastAddedIndex < len(subtitles):
-    subtitle = TedSubtitle( True, startTimeInParagraph, durationInParagraph, sentence )
-    filteredSubtitles.append(subtitle)
+    filteredSubtitles.append(paragraph)
 
   return filteredSubtitles
 
@@ -179,16 +184,13 @@ if False:
   PrintSubtitles(filteredChineseSubtitles)
 
 
-filteredEnglishSubtitles = []
-lengthForEnglishSubtitles = len(engSubtitles)
-
 idxForChineseSubtitles = 0
 idxForEnglishSubtitles = 0
 durationInParagraph = 0
 startTimeInParagraph = 0
 lengthForChineseSubtitles = len(filteredChineseSubtitles)
 englishSentence = ''
-
+lengthForEnglishSubtitles = len(engSubtitles)
 while idxForChineseSubtitles < lengthForChineseSubtitles:
   chineseDuration = filteredChineseSubtitles[idxForChineseSubtitles].duration
   minDurationDifference = 10000
@@ -205,7 +207,7 @@ while idxForChineseSubtitles < lengthForChineseSubtitles:
       if abs(preDurationDifference) < abs(currentDurationDifference):
         break
       else:
-        #idxForLastEnglishSubtitles += 1
+        idxForLastEnglishSubtitles += 1
         break
 
     idxForLastEnglishSubtitles += 1
@@ -222,4 +224,3 @@ while idxForChineseSubtitles < lengthForChineseSubtitles:
 
   englishSentence = ''
   idxForChineseSubtitles += 1
-
