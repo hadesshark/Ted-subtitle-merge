@@ -143,9 +143,12 @@ def GroupToParagraph(subtitles):
 
   for i in xrange(len(subtitles)):
     subtitle = subtitles[i]
+
+    
+
     
     if paragraph.startOfParagraph:
-      if i == 0 or True:
+      if i == 0:
         paragraph.startTime = subtitle.startTime
       else:
         paragraph.startTime = subtitles[i-1].startTime
@@ -156,9 +159,10 @@ def GroupToParagraph(subtitles):
     if IsNewParagraph(subtitle.startOfParagraph, paragraph.content):
       paragraph.TrimNewLine()
       if paragraph.duration == 0:
-        paragraph.duration = subtitle.endTime
-      paragraphs.append(paragraph)
+        paragraph.duration = subtitles[i-1].endTime
 
+
+      paragraphs.append(paragraph)
       paragraph = TedSubtitle(content = subtitle.content)
       lastAddedIndex = i
     else:
@@ -177,7 +181,9 @@ def GroupToParagraph(subtitles):
 
 filteredChineseSubtitles = GroupToParagraph(chineseSubtitles)
 
-
+for i in filteredChineseSubtitles:
+  print i.Description()
+  print
 
 def MergeSubtitles( filteredChineseSubtitles, engSubtitles ):
 
