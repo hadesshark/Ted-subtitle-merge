@@ -8,10 +8,11 @@ class TedSubtitle(object):
   def __init__(self, startOfParagraph = True, startTime = 0, duration = 0, content = ''):
     super(TedSubtitle, self).__init__()
     self.startOfParagraph = startOfParagraph
-    self.startTime = startTime
-    self.duration = duration
+    self.startTime = startTime / 1000
+    self.duration = duration / 1000
     self.content = content
-    self.endTime = startTime + duration
+    self.endTime = self.startTime + self.duration
+
 
 
   def Description(self):
@@ -23,7 +24,6 @@ class TedSubtitle(object):
 
   def TrimNewLine(self):
     self.content = self.content.replace('\n','')
-
 
 
 
@@ -85,8 +85,6 @@ def PrintSubtitles(subtitles):
 def ResetStartTime(arr):
   for i in range(len(arr)):
     arr[i].startTime -= arr[0].startTime
-    arr[i].startTime /= 1000
-    arr[i].duration /= 1000
 
   return arr
 
@@ -137,7 +135,7 @@ chineseSubtitles = ResetStartTime(GetSubtitles( talkID, chineselanguageCode ))
 
 
 
-def Merge(subtitles):
+def GroupToParagraph(subtitles):
   lastAddedIndex = 0
   lastAddedChar = ' '
   paragraphs = []
@@ -153,67 +151,91 @@ def Merge(subtitles):
         paragraph.startTime = subtitles[i-1].startTime
 
       paragraph.startOfParagraph = False
-
+    
+    
     if IsNewParagraph(subtitle.startOfParagraph, paragraph.content):
       paragraph.TrimNewLine()
+      if paragraph.duration == 0:
+        paragraph.duration = subtitle.endTime
       paragraphs.append(paragraph)
+
       paragraph = TedSubtitle(content = subtitle.content)
       lastAddedIndex = i
     else:
       paragraph.content += subtitle.content
       paragraph.duration = subtitle.endTime
+      
 
   if lastAddedIndex < len(subtitles):
     paragraphs.append(paragraph)
+
 
   return paragraphs
 
 
 
-filteredChineseSubtitles = Merge(chineseSubtitles)
+
+filteredChineseSubtitles = GroupToParagraph(chineseSubtitles)
 
 
 
-idxForEnglishSubtitles = 0
-lengthForChineseSubtitles = len(filteredChineseSubtitles)
-lengthForEnglishSubtitles = len(engSubtitles)
-paragraph = TedSubtitle()
+def MergeSubtitles( filteredChineseSubtitles, engSubtitles ):
 
-filteredEnglishSubtitles = []
-for chineseSubtitle in filteredChineseSubtitles:
-  currentDurationDifference = 0
-
-  idxForLastEnglishSubtitles = idxForEnglishSubtitles
-
-  while idxForLastEnglishSubtitles < lengthForEnglishSubtitles:
-    paragraph.duration = engSubtitles[idxForLastEnglishSubtitles].endTime
-
-    preDurationDifference = currentDurationDifference
-    currentDurationDifference = chineseSubtitle.duration - paragraph.duration
-
-    if currentDurationDifference <= 0:
-      if abs(preDurationDifference) < abs(currentDurationDifference):
-        break
-      else:
-        idxForLastEnglishSubtitles += 1
-        break
-
-    idxForLastEnglishSubtitles += 1
-
-
-  contents = [e.content for e in engSubtitles[idxForEnglishSubtitles:idxForLastEnglishSubtitles]]
-  paragraph.content += ' '.join(contents)
-  idxForEnglishSubtitles = idxForLastEnglishSubtitles
-
-  paragraph.content = paragraph.content.replace('\n',' ')
-  filteredEnglishSubtitles.append(paragraph)
+  idxForEnglishSubtitles = 0
+  lengthForChineseSubtitles = len(filteredChineseSubtitles)
+  lengthForEnglishSubtitles = len(engSubtitles)
   paragraph = TedSubtitle()
 
+  filteredEnglishSubtitles = []
+  for chineseSubtitle in filteredChineseSubtitles:
+    currentDurationDifference = 0
 
-for i in xrange(len(filteredChineseSubtitles)):
-  print filteredEnglishSubtitles[i].content
-  print filteredChineseSubtitles[i].content.encode('utf8')
-  print
-  print
-  print
+    idxForLastEnglishSubtitles = idxForEnglishSubtitles
+
+
+    print chineseSubtitle.content.encode('utf8')
+  
+    while idxForLastEnglishSubtitles < lengthForEnglishSubtitles:
+
+      paragraph.duration = engSubtitles[idxForLastEnglishSubtitles].endTime
+      preDurationDifference = currentDurationDifference
+      currentDurationDifference = chineseSubtitle.duration - paragraph.duration
+
+      print chineseSubtitle.duration , paragraph.duration
+      print
+      if currentDurationDifference <= 0:
+        if abs(preDurationDifference) < abs(currentDurationDifference):
+
+          break
+        else:
+          idxForLastEnglishSubtitles += 1
+          break
+
+      idxForLastEnglishSubtitles += 1
+
+    print "idx: ", idxForEnglishSubtitles, idxForLastEnglishSubtitles
+    contents = [e.content for e in engSubtitles[idxForEnglishSubtitles:idxForLastEnglishSubtitles]]
+
+    for k in contents:
+    
+      print k
+
+    print '-' * 20
+    paragraph.content += ' '.join(contents)
+    idxForEnglishSubtitles = idxForLastEnglishSubtitles
+
+    paragraph.content = paragraph.content.replace('\n',' ')
+    filteredEnglishSubtitles.append(paragraph)
+    paragraph = TedSubtitle()
+
+  return filteredEnglishSubtitles
+
+filteredEnglishSubtitles = MergeSubtitles( filteredChineseSubtitles, engSubtitles )
+if False:
+  for i in xrange(len(filteredChineseSubtitles)):
+    print filteredEnglishSubtitles[i].content
+    print filteredChineseSubtitles[i].content.encode('utf8')
+    print
+    print
+    print
 
