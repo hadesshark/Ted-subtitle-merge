@@ -188,10 +188,15 @@ if False:
 
 DEBUG = False
 def MergeSubtitles( filteredChineseSubtitles, engSubtitles ):
-
+  
   idxForEnglishSubtitles = 0
   lengthForChineseSubtitles = len(filteredChineseSubtitles)
   lengthForEnglishSubtitles = len(engSubtitles)
+  
+  lastObject = engSubtitles[lengthForEnglishSubtitles-1]
+  lastObject.startTime = lastObject.endTime
+  engSubtitles.append(lastObject)
+
   paragraph = TedSubtitle()
 
   filteredEnglishSubtitles = []
@@ -204,8 +209,7 @@ def MergeSubtitles( filteredChineseSubtitles, engSubtitles ):
       print chineseSubtitle.content.encode('utf8')
   
     while idxForLastEnglishSubtitles < lengthForEnglishSubtitles:
-   
-      paragraph.duration = engSubtitles[idxForLastEnglishSubtitles + 1].startTime if idxForLastEnglishSubtitles < lengthForEnglishSubtitles - 1 else engSubtitles[idxForLastEnglishSubtitles].endTime
+      paragraph.duration = engSubtitles[idxForLastEnglishSubtitles + 1].startTime
       preDurationDifference = currentDurationDifference
       currentDurationDifference = chineseSubtitle.duration - paragraph.duration
 
