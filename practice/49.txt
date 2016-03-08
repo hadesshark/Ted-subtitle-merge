@@ -1,301 +1,371 @@
-talkID : 51
-The old story about climate protection is that it's costly, or it would have been done already. So government needs to make us do something painful to fix it. The new story about climate protection is that it's not costly, but profitable.
-按以前的說法，氣候保護是個花錢的差事要不然的話早就著手進行了。所以政府需要我們做點犧牲來來搞定它。現在對氣候保護有個新看法它不僅不花錢，而且還能營利。
+talkID : 49
+I'm going to present three projects in rapid fire. I don't have much time to do it. And I want to reinforce three ideas with that rapid-fire presentation. The first is what I like to call a hyper-rational process. It's a process that takes rationality almost to an absurd level, and it transcends all the baggage that normally comes with what people would call, sort of a rational conclusion to something.
+我要快速地介紹三個項目時間不多,通過介紹這三個項目,我想強調三個概念.我把第一個概念稱為超理性過程.這個過程把理性提高到一個難以置信的境界以至於它超越了通常伴隨(人們常說的), 理性結論的所有累贅.
 
 
 
-This was a simple sign error, because it's cheaper to save fuel than to buy fuel, as is well known to companies that do it all the time -- for example, Dupont, SD micro electronics.
-這是一個簡單的錯誤癥候原因就在於，省油比買油要便宜，眾所周知，很多企業也都一直這樣做。比如，杜邦、SD微電子。
+And it concludes in something that you see here, that you actually wouldn't expect as being the result of rationality.
+這個過程產生了一些你將會看到的結論事實上這些結論很難讓人相信是理性推斷的結果.
 
 
 
-Many other firms -- IBM -- are reducing their energy intensity routinely six percent a year by fixing up their plants, and they get their money back in two or three years.
-很多其他公司，像是IBM，正在降低他們的能源密集度，通過改進他們的工廠，每年一般能減少6%的消耗兩到三年內就能收回投資。
+The second -- the second is that this process does not have a signature. There is no authorship. Architects are obsessed with authorship. This is something that has editing and it has teams, but in fact, we no longer see within this process, the traditional master architect creating a sketch that his minions carry out. And the third is that it challenges -- and this is, in the length of this, very hard to support why, connect all these things -- but it challenges the high modernist notion of flexibility. High modernists said we will create sort of singular spaces that are generic,
+第二個概念, 哦,第二個概念是一個沒有署名的過程.這個過程沒有創造者. 設計師癡迷於創造者.這個過程主要是團隊的合作和修改編輯實際上, 在這個過程中,我們看不到設計師照傳統產生忽略細節的設計草圖第三個概念,短時間內很難解釋為甚麼,把這些概念都聯繫起來它挑戰了極端現代主義概念上的靈活性極端現代主義者主張建立一種
 
 
 
-That's called a profit.
-這就是利潤。
+almost anything can happen within them. I call it sort of "shotgun flexibility" -- turn your head this way; shoot; and you're bound to kill something.
+普遍的線性空間在這些空間內, 任何事都可以發生我把這個稱為散彈式(漫無目標)的靈活性.(就好像) 轉頭, 射擊, 你肯定能射中些什麼.
 
 
 
-Now, similarly, the old story about oil is that if we wanted to save very much of it, it would be expensive, or we would have done it already, because markets are essentially perfect.
-現在，對於石油我們有著同樣的舊思維。如果我們想節約石油那就要花很多錢，要不我們早就成功了，因為市場基本完善。
+So, this is the promise of high modernism: within a single space, actually, any kind of activity can happen. But as we're seeing, operational costs are starting to dwarf capital costs in terms of design parameters.
+所以, 這就是極端現代主義的思想:在一個單一的空間, 實際上任何行為都可以發生.但是我們同時也看到經營費用會超過資本成本從設計參數上來說.
 
 
 
-If, of course, that were true, there would be no innovation, and nobody could make any money. But the new story about oil is the government doesn't have to force us to do painful things to get off oil -- not just incrementally, but completely -- quite the contrary. The United States, for example, can completely eliminate its use of oil and rejuvenate the economy at the same time, led by business for profit, because it's so much cheaper to save and substitute for the oil
-當然，如果這種說法是真的，那這個世界上就不會有創新了，也沒有人能賺到錢了。但是，現在對石油有個新看法政府不用再強迫我們來痛苦地戒掉石油這裡說的不僅是逐步減少使用，而是徹底地在全國範圍內停止使用石油。比如說，在美國能夠做到完全不用石油還能同時促進經濟發展，創造商業利潤，因為比起繼續買石油，節約和尋找替代燃料
+And so, with this sort of idea, what happens is, whatever actually is in the building on opening day, or whatever seems to be the most immediate need, starts to dwarf the possibility and sort of subsume it, of anything else could ever happen. And so we're proposing a different kind of flexibility, something that we call "compartmentalized flexibility."
+所以, 這種思想,導致了, 無論是落成時完成的建築設計或者說, 最當前的需要,都會阻礙任何將來可能發生的變化我們推薦一種不同的靈活性,稱之為"分類靈活性".
 
 
 
-than to keep on buying it. This process will also be catalyzed by the military for its own reasons of combat effectiveness and preventing conflict, particularly over oil.
-要便宜得多。這一過程同樣需要由軍隊合作加以推動因為他們有著強大的戰鬥力和預防衝突的能力尤其是在石油問題上。
+And the idea is that you, within that continuum, identify a series of points, and you design specifically to them. They can be pushed off-center a little bit, but in the end you actually still get as much of that original spectrum as you originally had hoped.
+基本思想就是, 在統一的整體中,確定一系列的點, (然後)根據這些點來設計.這些點也許會有點偏離中心,但事實上最終你會得到你原先期望的效果.
 
 
 
-This thesis is set out in a book called "Winning the Oil Endgame" that four colleagues and I wrote and have posted for free at Oilendgame.com --
-這個論點是在《贏下石油之戰的最後博弈》中提出的這本書是我和四個同事共同編寫，而且大家可以在Oilendgame.com上找到免費資源。
+With high modernist flexibility, that doesn't really work.
+極端現代主義的靈活性就沒有這樣的結果.
 
 
 
-about 170,000 downloads so far. And it was co-sponsored by the Pentagon -- it's independent, it's peer-reviewed and all of the backup calculations are transparently posted for your perusal.
-目前差不多有17萬人下載過。這本書由Pentagon監製獨立發行，經過了同行評審所有的備份資料都是透明的，公開的，大家可以去查閱。
+Now I'm going to talk about -- I'm going to build up the Seattle Central Library in this way before your eyes in about five or six diagrams, and I truly mean this is the design process that you'll see.
+接著我要介紹 -- 西雅圖中心圖書館的設計.用你看到的大概五六個圖,我是說你看到的就是(真正的)設計過程.
 
 
 
-Now, a bit of economic history, I think, may be helpful here. Around 1850, one of the biggest U.S. industries was whaling. And whale oil lit practically every building.
-現在講一點經濟史，也許會對大家有所幫助。1850年左右，捕鯨是美國最大的產業之一。幾乎所有建築燃料都是鯨油。
+With the library staff and the library board, we settled on two core positions. This is the first one, and this is showing, over the last 900 years, the evolution of the book, and other technologies.
+和圖書館工作人員與圖書館委員會一起,我們選定兩個核心定位.這是第一個, 它顯示了, 在過去的900年中,書本和其他技術的發展.
 
 
 
-But in the nine years before Drake struck oil, in 1859, at least five-sixths of that whale oil-illuminating market disappeared, thanks to fatal competitors, chiefly oil and gas made from coal,
-但是在1859年，在美國第一口油井開採九年之前，由於煤油和煤氣的競爭，以鯨油為燃料的照明市場受到致命打擊，至少六分之五的目標市場被搶下。
+This diagram was our sort of position piece about the book, and our position was, books are technology -- that's something people forget -- but it's a form of technology that will have to share its dominance with any other form of truly potent technology or media.
+這個圖就是我們對於書本的定位我們的定位是, 書本就是技術-這是人們總是忘記的事 -但書本就是一種形式的技術, 它必須和其他真正強大的技術共同分享它的領導性.
 
 
 
-to which the whalers had not been paying attention. So, very unexpectedly, they ran out of customers before they ran out of whales. The remnant whale populations were saved by technological innovators and profit-maximizing capitalists.
-之前捕鯨者並沒有注意到這些對手。因此，他們萬萬沒想到，鯨魚還能獵殺，客戶群跑光了。科技創新和追求最大利潤的資本家救了那些漏網鯨魚。
+The second premise -- and this was something that was very difficult for us to convince the librarians of at first -- is that libraries, since the inception of Carnegie Library tradition in America, had a second responsibility, and that was for social roles.
+第二個前提 - 這個前提一開始我們費了好大勁說服圖書管理員們 -就是圖書館, 自從美國卡耐基圖書館傳統的開始就具有第二個責任, 這個責任就是它的社交地位.
 
 
 
-(Laughter) And it's funny -- it feels a bit like this now for oil. We've been spending the last few decades accumulating a very powerful backlog of technologies for saving and substituting for oil, and no one had bothered to add them up before. So when we did, we found some very surprising things.
-（笑聲）並且十分有趣的是——感覺有點像現在的石油我們過去已經花了幾十年的時間積累了非常強大的技術力量用於節約石油和探索替代燃料在以前沒人費心去探討這些問題所以我們研究時，就有了驚人的發現。
+Ok, now, this I'll come back to later, but something -- actually, the librarians at first said, "No, this isn't our mandate. Our mandate is media, and particularly the book." So what you're seeing now is actually the design of the building.
+我會回頭解釋這點, 但是事實上,圖書管理員們, 一開始說, "不, 這不是我們的責任,我們的責任是傳媒, 特別是書本."所以你現在看到的實際上是這個建築的設計.
 
 
 
-Now, there are two big reasons to be concerned about oil. Both national competitiveness and national security are at risk. On the competitiveness front, we all know that Toyota has more market cap than the big three put together. And serious competition from Europe, from Korea, and next is China, which will soon be a major net exporter of cars.
-如今，石油問題變得越來越顯著，主要原因有兩大方面，即：國家競爭力威脅和國家安全威脅。從競爭力角度講，我們都知道，豐田的市場佔有率比三大美國汽車商總和還高還有其他強有力的競爭對手，來自歐洲的、韓國的、接下來還會有中國，因為它很快就會成為主要的汽車淨出口國。
+The upper diagram is what we had seen in a whole host of contemporary libraries that used high modernist flexibility. Sort of, any activity could happen anywhere.
+上面這個圖是我們在根據極端現代主義靈活性設計的所有現代圖書館中看到的.看上去好像, 任何事都可能在任何地方發生.
 
 
 
-How long do you think it will take before you can drive home your new wally-badged Shanghai automotive super-efficient car? Maybe a decade, according to my friends in Detroit.
-你覺得還得用多長時間，你就會開著上海生產的汽車回家? 這車的品質一流，超級省油。在底特律的朋友說，也許要十年。
+We don't know the future of the library; we don't know the future of the book; and so, we'll use this approach.
+我們不了解圖書館的未來, 不了解書籍的未來,所以我們採用這種方法.
 
 
 
-China has an energy policy based on radical energy efficiency and leap-frog technology. They're not going to export your uncle's Buick. And after that comes India.
-中國出臺一項能源政策該政策以全新的高效能源和跨越式的技術作為基礎。他們不會出口大排量車，而之後還會有來自印度的競爭。
+And what we saw were buildings that were very generic, and worse -- not only were they very generic -- so, not only does the reading room look like the copy room look like the magazine area -- but it meant that whatever issue was troubling the library at that moment was starting to engulf every other activity that was happening in it.
+我們看到的是, 所有的建築都非常統一普通,更糟的是, 不只是所有的建築都很普通 -不僅僅是閱覽室看上去像復印室看上去像雜誌區 -它還顯示了,圖書館在想要包含所有的活動的時候所遇到的問題.
 
 
 
-The point here is, these cars are going to be made super efficient. The question is, who will make them? Will we in the United States continue to import efficient cars to replace foreign oil, or will we make efficient cars and import neither the oil nor the cars?
-關鍵的一點，這些車都會非常省油。問題只是誰來製造它們。我們美國會不會繼續以進口節能汽車來代替進口石油或者我們自己製造節能汽車，不再進口石油，也不再進口汽車。
+And in this case, what was getting engulfed were these social responsibilities by the expansion of the book. And so we proposed what's at the lower diagram. Very dumb approach: simply compartmentalize. Put those things whose evolution we could predict -- and I don't mean that we could say what would actually happen in the future, but we have some certainty of the spectrum of what would happen in the future -- put those in boxes designed specifically for it, and put the things that we can't predict on the rooftops.
+在這種情況下, 包含進設計的,就是這些由書本延伸出去的社交地位.所以我們推薦了下端這個圖.非常傻的方法:簡單分類. 把所有我們能預見的發展放在一起 -我不是說我們能預見將來一定會發生的事,但是我們能確定大致的範疇對於將來會發生的事 -把那些(預見)放在特別設計的方框內,然後把不能預測的事情放在頂上.
 
 
 
-That seems to make more sense. The more we keep on using the oil, particularly the imported oil, the more we face a very obvious array of problems. Our analysis assumes that they all cost nothing, but nothing is not the right number. It could well be enough to double the oil price, for example. And one of the worst of these is what it does to our standing in the world if other countries think that everything we do is about oil, if we have to treat countries that have oil
-這樣做看起來更有意義未來我們使用的石油越多，尤其是進口石油我們所面臨的問題將會越嚴重。我們在分析中假設它們都沒有什麼成本並不是說真的沒有成本比如，這可能足以使汽油的價格上漲一倍其中最糟的事情之一就是它會對我們在世界上的地位造成什麼影響如果其他國家認為我們所做的一切只是為了獲得石油如果我們不得不把那些石油國
+So that was the core idea.
+這是核心的思想.
 
 
 
-differently than countries that don't have oil. And our military get quite unhappy with having to stand guard on pipelines in Far-off-istan when what they actually signed up for was to protect American citizens. They don't like fighting over oil, they don't like being in the sands and they don't like where the oil money goes and what sort of instability it creates. Now, in order to avoid these problems, whatever you think they're worth, it's actually not that complicated.
-和那些非石油國區別對待我們的軍隊會十分不高興因為他們不得不駐守在遙遠的伊斯坦前線。因為他們參軍的真正意義在於保衛美國人民他們不喜歡為了石油而戰他們不喜歡生活在沙漠裡他們不喜歡那些賣油的地方以及由此產生的那些不安定狀況如今，為了避免這些問題不管你怎樣想，它們都物有所值，實際上也沒有那麼複雜。
+Now, we had to convince the library that social roles were equally important to media, in order to get them to accept this. What you're seeing here is actually their program on the left.
+現在, 我們必須說服圖書館, 社交地位和傳媒地位是同樣重要的為了使圖書館接受這個思想.你們現在看到左邊的就是他們的程序.
 
 
 
-We can save half the oil by using it more efficiently, at a cost of 12 dollars per saved barrel. And then we can replace the other half with a combination of advanced bio-fuels and safe natural gas.
-通過更高效的使用方式，我們可以節省一半的石油，每桶油節省12美元，然後我們可以將另外半桶油用先進生物燃料和安全天然氣的混合物來代替。
+That's as it was given to us in all of its clarity and glory. Our first operation was to re-digest it back to them, show it to them and say, "You know what? We haven't touched it, but only one-third of your own program is dedicated to media and books. Two-thirds of it is already dedicated -- that's the white band below, the thing you said isn't important -- is already dedicated to social functions." So once we had presented that back to them, they agreed that this sort of core concept could work.
+和我們拿到它的時候一樣清楚.我們第一步是重新消化這個程序然後回頭展示給他們說,"知道嗎? 我們一點沒動過這個程序,但是只有三分之一的程序是致力於傳媒和書籍.三分之二有關於 -- 就是下面這個白色部分你認為不重要的事情:就是和社交功能有關."因此, 一旦我們向他們這樣展示,他們同意這樣的核心概念行的通.
 
 
 
-And that costs on average under 18 dollars a barrel. And compared with the official forecast, that oil will cost 26 dollars a barrel in 2025, which is half of what we've been paying lately, that will save 70 billion dollars a year, starting quite soon. Now, in order to do this we need to invest about 180 billion dollars: half of it to retool the car, truck and plane industries;
-每桶油的平均成本不到18美元相比之下官方的預測是到2025年這樣的混合油成本為26美元比現在的價格降低了一半儘快著手，每年我們將省下700億美元現在，為了實現這一計畫，我們需要大約1800億美元的投資其中有一半用來重新裝備汽車，卡車和飛機工業。
+We got the right to go back to first principles -- that's the third diagram. We recombined everything. And then we started making new decisions.
+我們獲得同意後回到了最初的原則 --這就是第三個圖. 我們重新組合了一切.然後開始重新做決定.
 
 
 
-half of it to build the advanced bio-fuel industry. In the process, we will gain about a million good jobs, mainly rural. And protect another million jobs now at risk, mainly in auto-making.
-一半用來創建先進的生物燃料工業。在這一過程中，有100萬個好的就業機會集中產生在農村。並能保住另外100萬個岌岌可危的工作職位，這些職位主要集中在汽車製造業。
+What you're seeing on the right is the design of the library, specifically in terms of square footage. On the left of that diagram, here, you'll see a series of five platforms -- sort of combs, collective programs.
+你看到右邊這個就是圖書館的設計,特別是它的面積.在圖的左邊,這裡,你會看到一系列的五個平台 --梳理整合後的程序.
 
 
 
-And we'll also get returns over 150 billion dollars a year. So that's a very handsome return. It's financeable in the private capital market. But if you want it for the reasons I just mentioned, to happen sooner and with higher confidence, then -- and also to expand choice and manage risk -- then you might like some light-handed public policies that support rather than distorting or opposing the business logic.
-而且每年我們還能收回超過1500億美元的投資所以這是一個很可觀的回報在私有資本主義市場上它有著很強的融資能力如果你聽了我的解釋後想要加入，那就信心百倍地趕緊加入吧，——當然，同時要擴大選擇範圍，並且要評估風險——然後你可能會喜歡一些寬鬆的公共政策這些政策並不扭曲或反對商業邏輯，而是對此表示贊同。
+And on the right are the more indeterminate spaces; things like reading rooms, whose evolution in 20, 30, 40 years we can't predict.
+右邊的是比較中間過度性的空間,比如說閱覽室, 這種空間的發展在20, 30, 40年之後我們不能預測.
 
 
 
-And these policies work fine without taxes, subsidies or mandates. They make a little net money for the treasury. They have a broad trans-ideological appeal,
-這些政策不錯: 沒有稅收、補貼、和法令干涉。它們能為國庫產生一些淨收益，不論對哪個意識形態，它都有著廣泛的吸引力。
+So that literally was the design of the building. They signed it, and to their chagrin, we came back a week later, and we presented them this.
+這就是這個建築的最初設計.他們認同了這個設計, 令他們懊惱的是,一個星期之後我們回頭, 向他們展示了這個.
 
 
 
-and because we want them actually to happen, we figured out ways to do them that do not require much, if any, federal legislation, and can, indeed, be done administratively or at a state level.
-因為我們希望這一切成為現實我們已經想好了怎樣去做我們要求不多，如果有的話，就是聯邦立法。並能確確實實地落實在行政上或州級政策上。
+And as you can see, it is literally the diagram on the right. (Laughter) We just sized -- no, really, I mean that, literally. The things on the left-hand side of the diagram, those are the boxes. We sized them into five compartments. They're super-efficient.
+正如你所看到的, 就是右邊的這個圖.我們就是改了一下大小我說真的.圖左邊的這些那些是方框.我們重新定大小成了五個類別.
 
 
 
-Just to illustrate what to do about the nub of the problem, namely, light vehicles, here are four ultra-light carbon-composite concept cars with low drag, and all but the one at the upper left have hybrid drive. You can sort of have it all with these things. For example, this Opel two-seater does 155 miles an hour at 94 miles a gallon. This muscle car from Toyota: 408 horsepower in an ultra-light that does zero to 60 in well under four seconds,
-剛才只是說明了核心問題應該怎麼辦，也就是，製造輕型車輛這裡有4個超輕型碳複合材料低阻力的概念車，除了左上角的，都有混合動力驅動可以說，你可以擁有上面提到的一切比如說這個雙座的歐寶車每小時行駛155英里的話，一加侖油能跑94英里這個是豐田的超輕型強力車型，408匹馬力很輕易就能在四秒內從0碼加速到60碼
+We had a very low budget to work with. We pushed them around on the site to make very literal contextual relationships. The reading room should be able to see the water.
+它們超級有效. 我們可供使用的成本很低.我們移動這些方框來組建非常清楚的相互關係.閱覽室應該可以看見水面.
 
 
 
-and still gets 32 miles a gallon. I'll say more later about this. And in the upper left, a pioneering effort 14 years ago by GM -- 84 miles a gallon without even using a hybrid, in a four-seater. Well, saving that fuel, 69 percent of the fuel in light vehicles costs about 57 cents per saved gallon. But it's even a better deal for heavy trucks, where you save a similar amount at 25 cents a gallon, with better aerodynamics and tires and engines, and so on,
-一加侖油仍然能跑32公里。等一下我再說這個左上角的這個，是通用汽車14年前的先驅之作即使在沒有混合動力，四個座椅的情況下，每加侖能跑84英里那麼，按節省燃料算，輕型汽車能節省69%每節省一加侖成本大約是57美分但是，重型卡車的話會更划算節省的燃料差不多，每加侖只需25美分還有更先進的空氣動力，輪胎和引擎等。
+The main entrance should have a public plaza in front of it to abide by the zoning code, and so forth.
+主入口前面應該有一個公共廣場為了滿足劃區的原則,等等.
 
 
 
-and taking out weight so you can put it into payload. So you can double efficiency with a 60 percent internal rate of return. Then you can go even further, almost tripling efficiency with some operational improvements, double the big haulers' margins. And we intend to use those numbers to create demand pull, and flip the market. In the airplane business, it's again a similar story
-還解決了重量問題，因此你可以把它算進載重量所以它的內部收益率為60%，能夠取得雙重效益然後你可以更進一步，改善經營運作將效益再提高一倍大的運輸商利潤能翻一倍我們打算利用這些數字，拉動需求，扭轉市場趨勢在航空業務方面，情況也是這樣的。
+So, you see the five platforms, those are the boxes. within each one, a very discrete thing is happening. The area in between is sort of an urban continuum, these things that we can't predict their evolution to the same degree.
+你看到的這五個平台 --也就是這五個方框 -- 每一個方框內都有一件不同的用途.這之間的區域是城市的聯結處,我們不能預測它們未來的發展.
 
 
 
-where the first 20 percent fuel saving is free, as Boeing is now demonstrating in its new Dreamliner. But then the next generation of planes saves about half. Again, much cheaper than buying the fuel. And if you go over the next 15 years or so to a blended-wing body, kind of a flying wing with internal engines, then you get about a factor three efficiency improvement at comparable or lower cost. Let me focus a minute on the light vehicles, the cars and light trucks,
-最初的節省的20%的燃料需要投入資金比如像現在波音公司新的夢幻客機但是下一代的飛機大約能節省一半。同樣，比購買燃料便宜多了如果你仔細審視一下未來15年，或者是所謂的混合翼結構就是那種有內置引擎的機翼那麼你就有可能以相對較低的成本把你的效益提高三倍下面我用一分鐘來集中談一下輕型汽車，轎車和輕型卡車。
+To give you some sense of the power of this idea, the biggest block is what we call the book spiral. It's literally built in a very inexpensive way -- it is a parking garage for books.
+為了讓你感受一下這個設計的強大性,我們來看看這個最大的方塊, 我們稱作圖書螺旋.它事實上建起來很便宜就是一個圖書的停車庫.
 
 
 
-because we all know the most about those; probably everybody here drives one. And yet we may not realize that in a standard sedan, of all the fuel energy you feed into the car, seven-eighths never gets to the wheels; it's lost first in the engine, idling at zero miles a gallon, the power train and accessories. So then of the energy that does get to the wheels, only an eighth of it, half of that, goes to heat the tires on the road, or to heat the air the car pushes aside. And only this little bit, only six percent
-由於我們對這三種車型比較熟悉在座的可能都是開著這幾種車來的然而我們可能沒有意識到，在標準汽車內部你為車所加的那些油的能量八分之七都沒用在車輪子上首先，浪費在引擎內部，還沒起步，動力系統和配件就費了一加侖油接著能量才開始驅動車輪只占總能量的1/8，其中一半還轉化為輪胎摩擦地面的熱量或者是汽車排放的熱氣只有這一點點，只有百分之六的能量
+It just so happens to be on the 6th through 10th floors of the building, but that is not necessarily an expensive approach. And it allows us to organize the entire Dewey Decimal System on one continuous run; no matter how it grows or contracts within the building, it will always have its clarity to end the sort of trail of tears that we've all experienced in public libraries. (Laughter)
+它正好就在這個建築的六到十層,但這不一定意味著花銷佷高.同時這個設計使得我們能夠用一種連續的方式來組織整個杜威十進制系統:無論它怎樣在這個建築中增長或減小,很明顯它總是很清楚能避免我們在公共圖書館經歷的(找不到書)沮喪.
 
 
 
-actually ends up accelerating the car and then heating the brakes when you stop. In fact, since 95 percent of the weight you're moving is the car not the driver, less than one percent of the fuel energy ends up moving the driver. This is not very gratifying after more than a century of devoted engineering effort. (Laughter) (Applause) Moreover, three-fourths of the fuel use is caused by the weight of the car. And it's obvious from the diagram that every unit of energy you save at the wheels is going to avoid wasting another seven units of energy
-在實際上起到了汽車加速的作用然後在刹車時轉化為熱量事實上，由於車體的重量占了總重量的95%，只有不到1%的燃料能量是用在載人上的但這讓人們不滿意，因為我們為了改進技術忙了一百多年(笑聲)(掌聲)此外，四分之三的燃料都耗費在車體重量上從圖表中明顯可以看出大家省的那一份油都省在車輪上了接下來我們要把浪費掉的另外七份省出來
+And so this was the final operation, which was to take these blocks as they were all pushed off kilter, and to hold onto them with a skin. That skin serves double duty, again, for economics. One, it is the lateral stability for the entire building; it's a structural element. But its dimensions were designed not only for structure, but also for holding on every piece of glass.
+(笑聲)所以最後的一步, 就是把這些方框放到一起用一個外表固定.這個外表有兩個功能,第一, 就是整個建築的橫向穩定性:這是一個結構上的要素. 但是它不光是為了結構而設計,同時也要固定住每一塊玻璃.
 
 
 
-getting that energy to the wheels. So there's huge leverage for making the car a lot lighter. And the reason this has not been very seriously examined before is there was a common assumption in the industry that -- well, then it might not be safe if you got whacked by a heavy car, and it would cost a lot more to make, because the only way we know how to make cars much lighter was to use expensive light metals like aluminum and magnesium. But these objections are now vanishing through advances in materials. For example, we use a lot of carbon-fiber composites
-都用到車輪子上因此汽車大幅減重是一個十分重要的方面而之前沒有認真研究這一點是因為在這一行有一個不成文的假設--就是，如果被重車撞了，車輕了會很不安全，這樣就需要花費更高的成本因為我們所知道的，減輕車重的唯一方法就是使用像鎂、鋁這樣的昂貴輕金屬但隨著材料的進步這些都已經不成問題了比如，我們使用了大量的碳纖維複合材料
+The glass was then -- I'll use the word impregnated -- but it had a layer of metal that was called "stretched metal." That metal acts as a microlouver, so from the exterior of the building, the sun sees it as totally opaque, but from the interior, it's entirely transparent.
+玻璃然後就融為一體但它還有一層抗壓金屬.這個金屬起到了百葉窗的作用,從建築的外部, 陽光不能完全透過,但從建築內部看又是完全透明.
 
 
 
-in sporting goods. And it turns out that these are quite remarkable for safety. Here's a handmade McLaren SLR carbon car that got t-boned by a Golf. The Golf was totaled. The McLaren just popped off and scratched the side panel.
-製造體育用品。而事實證明這些都是十分安全的這裡是手工的邁凱輪單反碳纖維車，擁有高爾夫的T型骨架高爾夫沒玩明白邁凱輪也出局了，僅僅抓住了其中的一點皮毛。
+So now I'm going to take you on a tour of the building. Let me see if I can find it. For anyone who gets motion sickness, I apologize. So, this is the building.
+接著我要帶你參觀整個建築.看看我能不能找到這個. 對所有人, --如果你容易暈車, 我很抱歉.這就是這個建築.
 
 
 
-They'll pop it back on and fix the scratch later. But if this McLaren were to run into a wall at 65 miles an hour, the entire crash energy would be absorbed by a couple of woven carbon-fiber composite cones, weighing a total of 15 pounds, hidden in the front end. Because these materials could actually absorb six to 12 times as much energy per pound as steel, and do so a lot more smoothly. And this means we've just cracked the conundrum of safety and weight.
-相信不久，它們會重新進入這一領域，彌補他們的損失。但是如果邁凱輪的這款車以65英里的時速撞到牆上碰撞產生的全部能量都會被一對有碳纖維複合編織而成的錐體所吸收它重達15磅，隱藏在車體前端因為在現實中每磅這樣的材料吸收的能量，比同重量的鋼鐵要高出5到11倍而且要平穩順利的多這意味著我們剛剛破獲了安全和重量的難題。
+And I think what's important is, when we first unveiled the building, the public saw it as being totally about our whim and ego. And it was defended, believe it or not, by the librarians. They said, "Look, we don't know what it is, but we know it's everything that we need it to be, based on the observations that we've done about the program." This is going into one of the entries. So, it's an unusual building for a public library, obviously.
+我認為值得注意的是, 當我們最初展示這個建築時,公眾認為它完全是出於我們一時的心血來潮和自大.不管你信不信, 圖書管理員們為我們辯護. 他們說,我們不知道它到底是什麼, 但是我們知道這是所有我們需要的根據我們在整個過程中的觀察. "這個是其中一個入口.所以對於一個公共圖書館來說這是一座不尋常的建築.很顯然.
 
 
 
-We could make cars bigger, which is protective, but make them light. Whereas if we made them heavy, they'd be both hostile and inefficient. And when you make them light in the right way, that can be simpler and cheaper to make.
-我們可以把汽車造的更大，更安全，但要減輕重量如果我們把車造的很沉，只會礙手礙腳，效率降低。如果我們用正確的方式來減輕車重汽車製造將會變得更簡單，成本更低。
+So now we're going into what we call the living room. This is actually a program that we invented with the library. It was recognizing that public libraries are the last vestige of public free space.
+接著我們進入到閱覽室 -- 抱歉, 這是大廳.這是我們和這個圖書館一起開發的程序眾所周知, 公共圖書館是最後一點免費的公共場所.
 
 
 
-You can end up saving money, and lives, and oil, all at the same time. I showed here two years ago a little bit about a design of your basic, uncompromised, quintupled-efficiency suburban-assault vehicle --
-同時，你不用再為省錢省油省時間煩惱了兩年前我就多多少少提到過一款你必不可少，不折不扣的，五倍車速郊區突擊車。
+There are plenty of shopping malls that allow you to get out of the rain in downtown Seattle, but there are not so many free places that allow you to get out of the rain. So this was an unprogrammed area where people could pretty much do anything, including eat, yell, play chess and so forth.
+有足夠的商場下雨的時候你可以去在西雅圖市中心,但是沒有很多免費的場所讓你躲雨.這是一個沒有確定目的自由場地, 人們基本上可以做任何事,包括吃東西, 叫喊, 下棋, 等等.
 
 
 
-(Laughter) -- and this is a complete virtual design that is production-costed manufacturable.
-(笑聲)而且這是一個全新的視覺設計屬於生產製造成本。
+Now we're moving up into what we call the mixing chamber. That was the main technology area in the building. You'll have to tell me if I'm going too fast for you. And now up. This is actually the place that we put into the building so I could propose to my wife, right there.
+接著我們移到我們稱作混合區.這是這個建築的主要場地.讓我知道如果我的速度太快了.再往上.這個地方我們放進這個建築好讓我向我妻子求婚. 就是這.
 
 
 
-And the process needed to make it is actually coming toward the market quite nicely. We figured out a kind of a digital inkjet printer for this very stiff, strong, carbon-composite material, and then ways to thermoform it, because it's a combination of carbon and nylon, into whatever complex shapes you want, like the one just shown at the auto show by one of the tier-one suppliers.
-而且製造過程正在逐漸與市場很好地結合起來。我們設計出一種電子噴墨印表機專門配合這種非常堅固的，高強度的碳複合材料，然後再把它們加熱，因為它是碳和尼龍的結合物，因此你可以把它做成各種你想要的複雜形狀，不久前一個前端供應商在車展上展示的就是其中一例。
+(Laughter) She said yes.
+(笑聲)她同意了.
 
 
 
-And the manufacturing you can do this way gets radically simplified. Because the auto body has only, say, 14 parts, instead of 100, 150. Each one is formed by one fairly cheap die set, instead of four expensive ones for stamping steel.
-通過這種方式，你可以從根本上使製造方式簡單化。因為這樣的車身僅需14個部分，而不再是100150個零件每一部分都由一套相當便宜的成套模具組成，而不是四個昂貴的衝壓鋼。
+(Laughter) I'm running out of time, so I'm actually going to stop. I can show this to you later. But let's see if I can very quickly get into the book spiral, because I think it's, as I said, the most -- this is the main reading room -- the most unique part of the building.
+我的時間不夠了, 就此打住.以後再給你看.但我們看看能否快速地進入圖書螺旋,因為我認為, 如我提到, 最 --這是主閱覽室 -- 建築中最獨特的部分.
 
 
 
-Each of the parts can be easily lifted with no hoist. They snap together like a kid's toy. So you got rid of the body shop. And if you want, you can lay color in the mold, and get rid of the paint shop. Those are the two hardest and costliest parts of making a car.
-不用起重機就能很容易地吊起來每一部分。它們扣合在一起就像小孩疊積木一樣你就再也不用去汽車修理廠了如果你願意，你可以在模具裡直接加顏色，就省的給車噴漆了這兩個是汽車製造中最麻煩也是最貴的部分。
+You dizzy yet? Ok, so here, this is the book spiral. So, it's very indiscernible, but it's actually a continuous stair-stepping. It allows you to, on one city block, go up one full floor, so that it's on a continuum.
+有沒有頭暈?這二很難看清,但它實際上是一個連續的樓梯.它讓你, 在一個街區的距離,上一層樓, 所以這是一個連續上升的階梯.
 
 
 
-So you end up with at least two-fifths lower capital intensity than the leanest plant in the industry, which GM has in Lansing. The plant also gets smaller.
-因此最後你將會比汽車行業中最精小的工廠，通用設在 Lansing 的分廠，還要節省2/5的資金工廠規模也會更小。
+Ok, now I'm going to go back, and I'm going to hit a second project. I'm going to go very, very quickly through this. Now this is the Dallas Theater. It was an unusual client for us, because they came to us and they said, "We need you to do a new building. We've been working in a temporary space for 30 years,
+好, 現在我要回來, 介紹第二個項目.我將很快的介紹這個.這個是達拉斯劇院. 這是一個因為他們找上我們, 說,我們需要你建一個新的建築. 我們已經在一個臨時的地方工作了30年.
 
 
 
-Now, when you go through a similar analysis for every way we use oil, including buildings, industry, feedstocks and so on, you find that of the 28 million barrels a day the government says we will need in 2025, well, about eight of that can be removed by efficiency by then, with another seven still being saved as the vehicle stocks turn over, at an average cost of only 12 bucks a barrel, instead of 26 for buying the oil. And then another six can be made robustly, competitively,
-現在，如果你查閱一份類似分析石油使用方式的報告的話，這裡面包括建築、工業、原料等，你會發現我們每天要消耗2800萬桶，這是政府預測得到2025年時的資料，那麼，通過提高使用效率，到時候我們每桶可節約8美元，隨著汽車股的逆轉，還可以省掉另外7美元平均下來每桶油只需12美元而不是之前預言的26美元接著，汽油中的一半可以用有強勁競爭力的
+but because of that temporary space, we've become an infamous theater company. Theater is really focused in New York, Chicago and Seattle, with the exception of the Dallas Theater Company." And the very fact that they worked in a provisional space meant that for Beckett, they could blow out a wall; they could do "Cherry Orchard" and blow a hole through the floor, and so forth. So it was a very daunting task for us to do a brand-new building that could be a pristine building,
+但由於是一個臨時的場所,我們變成了一個籍籍無名的劇院.劇院真正是集中在紐約, 芝加哥和西雅圖,一個例外就是達拉斯劇院."他們在臨時場所工作, 實際上意味著, 他們可以為了貝克特炸毀一座牆;他們可以演"櫻桃園", 並且在地板上炸一個洞, 等等.對我們來說建一座新樓是一件很嚇人的任務要保持完整無缺的建築,
 
 
 
-from cellulosic ethanol and a little bio-diesel, without interfering at all with the water or land needs of crop production.
-纖維素乙醇和少量的生物柴油來代替，它們是用水和糧食造的，絕對沒有問題。
+but keep this kind of experimental nature. And the second is, they were what we call a multi-form theater, they do different kinds of performances in repertory. So they in the morning will do something in arena, then they'll do something in proscenium and so forth.
+又要保持這種實驗性的特色.另外, 他們是我們所稱的多形式劇院: 他們有不同形式的表演.早上會在舞台上演,然後又在台前, 諸如此類.
 
 
 
-There is a huge amount of gas to be saved, about half the projected gas at about an eighth of its price. And here are some no-brainer substitutions of it, with lots left over.
-這樣能省下大量的汽油計畫中大約一半的石油價格只有其原價格的1/8還有其他一些簡單易行的代替方法，給我們很多選擇餘地。
+And so they needed to be able to quickly transform between different theater organizations, and for operational budget reasons, this actually no longer happens in pretty much any multi-form theater in the United States, so we needed to figure out a way to overcome that.
+所以他們需要能夠很快的在不同劇院結構之間變化,因為經營成本的原因,這從不發生在美國其他任何多形式劇院,所以我們要想一個辦法克服這個.
 
 
 
-So much, in fact, that after you've handled the domestic oil forecast from areas already approved, you have only this little bit left, and let's see how we can meet that, because there's a pretty flexible menu of ways.
-說了這麼多，事實上，你已經把握住了公認的領域國內石油的走勢只剩下這點，先看看我們應該怎樣解決因為方法靈活多變，選擇性大。
+So our thought was to literally put the theater on its head: to take those things that were previously defined as front-of-house and back-of-house and stack them above house and below house, and to create what we called a theater machine.
+我們的想法是合理安排劇院把原先定為前面和後面的東西拿出來放成上下結構 - 樓上和樓下創造出一個我們稱為劇院機器的東西.
 
 
 
-We could, of course, buy more efficiency. Maybe you ought to buy efficiency at 26 bucks instead of 12. Or wait to capture the second half of it. Or we could, of course, just get this little bit by continuing to import some Canadian and Mexican oil, or the ethanol the Brazilians would love to sell us. But they'll sell it to Japan and China instead, because we have tariff barriers to protect our corn farmers, and they don't.
-我們當然可以，少花錢買到更多的燃料也許你花12美元買的燃料原本值26美元或者原本只能買到這些量的一半當然我們還可以，通過不斷從加拿大和墨西哥進口來獲得一點油或者喜歡酒精的巴西人會願意賣給我們但他們還可以選擇賣給日本和中國因為我們設有貿易壁壘來保護玉米農場主，而他們沒有。
+We invest the money in the operation of the building. It's almost as though the building could be placed anywhere, wherever you place it, the area under it is charged for theatrical performances.
+我們把錢花在了建築的運作上.就好像這個建築可以放在任何地方: 不管你放在哪, 下面的面積用作劇院表演.
 
 
 
-Or we could use the saved gas directly to cover all of this balance, or if we used it as hydrogen, which is more profitable and efficient, we'd get rid of the domestic oil too. And that doesn't even count, for example, that available land in the Dakotas can cost effectively make enough wind power to run every highway vehicle in the country.
-或者動用石油儲備來達到供求平衡要是我們用氫氣做替代品，效率和效益就更高了也就不用再為國內石油煩惱了類似的方法不計其數，舉個例子，如果能有效開發達科他州可利用的空地，風能可供所有高速路上的車運行使用。
+And it allowed us to go back to first principles, and redefine fly tower, acoustic enclosure, light enclosure and so forth. And at the push of a button, it allows the artistic director to move between proscenium, thrust, and in fact, arena and traverse and flat floor, in a very quick transfiguration.
+這使得我們能過回到最基本的原則,重新定義舞台牆,聲光效果,等等.按一個按鈕, 藝術總監就可以在台前,舞台, 台中, 地板之間很快的移動.
 
 
 
-So we have lots of options. And the choice of menu and timing is quite flexible. Now, to make this happen quicker and with higher confidence, there is a few ways government could help. For example, fee-bates, a combination of a fee and a rebate in any size class of vehicle you want, can increase the price of inefficient vehicles and correspondingly pay you a rebate for efficient vehicles. You're not paid to change size class. You are paid to pick efficiency within a size class, in a way equivalent to looking at all fourteen years of life-cycle fuel savings
-所以說我們有很多選擇方法和時機也都非常靈活那麼，為了能儘快著手，增強信心政府可以在某些方面幫幫忙比如，針對市場上的所有車型設計一個收費和回扣方案以提高低效汽車的價格並相應地，給那些買高效車的人打折你不必為換車型而花錢同一車型，只需在選擇使用效率時付帳，在某種程度上，相當於考慮節省整整14年生命週期的燃料
+So in fact, using operational budget, we can -- sorry, capital cost -- we can actually achieve what was no longer achievable in operational cost. And that means that the artistic director now has a palette that he or she can choose from, between a series of forms and a series of processions, because that enclosure around the theater that is normally trapped with front-of-house and back-of-house spaces has been liberated.
+實際上, 我們, 用了運作成本 --不對, 資本成本 -- 我們能獲得運作成本不能獲得的效果.這意味著現在藝術指導有一個調色板, 她或者他能夠從一系列的形式和隊伍之間選擇,因為劇院中通常的夾在台前和台後的空間被解放出來了.
 
 
 
-rather than just the first two or three. This expands choice rapidly in the market, and actually makes more money for automakers as well. I'd like to deal with the lack of affordable personal mobility in this country by making it very cheaply possible for low-income families to get efficient, reliable, warranted new cars that they could otherwise never get.
-而不只是兩三年的市場上迅速多了這麼多選擇實際也讓汽車製造商多了很多賺錢的機會下面我想說的是，美國缺少普通人能用得起的交通工具應該生產出適合低收入家庭的，價位最低耗油少，又有可靠保證的新車否則，他們永遠都買不起車。
+So an artistic director has the ability to have a performance that enters in a Wagnerian procession, shows the first act in thrust, the intermission in a Greek procession, second act in arena, and so forth.
+所以藝術指導就能夠展示 --先來一出瓦格納的遊行推出第一幕,再過度到希臘式的場景,第二幕到競技場, 諸如此類.
 
 
 
-And for each car so financed, scrap almost one clunker, preferably the dirtiest ones. This creates a new million-car-a-year market for Detroit from customers they weren't going to get otherwise, because they weren't creditworthy and could never afford a new car. And Detroit will make money on every unit. It turns out that if, say, African-American and white households had the same car ownership, it would cut employment disparity about in half by providing better access to job opportunities. So this is a huge social win, too.
-由於購買汽車費用很高，報廢的汽車基本上破舊不堪往往也是最髒的這每年能帶給底特律百萬輛車的市場而這批客戶卻是他們主動放棄的因為他們沒有良好的信譽，也根本買不起新車底特律會在每一個環節上創造財富事實證明，如果說，美國黑人和白人家庭有著相同的汽車購買力就業差異會減少一半因為就業機會增多，就業管道擴大所以說這是全社會的一個極大勝利。
+So I'm going to show you what this actually means. This is the theater up close. Any portion around the theater actually can be opened discretely. The light enclosure can be lifted separate to the acoustic enclosure, so you can do Beckett with Dallas as the backdrop.
+我要向你展示一下 -- 這個實際上是什麼意思.這個是戲院的近觀.這個戲院的任何一部份都能被分別打開.燈光道具和聲響道具能分別吊起來所以你能演貝克特,而背景是達拉斯.
 
 
 
-Governments buy hundreds of thousands of cars a year. There are smart ways to buy them and to aggregate that purchasing power to bring very efficient vehicles into the market faster. And we could even do an X Prize-style golden carrot that's worth stretching further for. For example, a billion-dollar prize for the first U.S. automaker to sell 200,000 really advanced vehicles, like some you saw earlier.
-政府每年要買幾十萬輛車購買新型車是一個明智之舉，不僅能提高購買力還能促進高效節能車在市場上的推廣我們甚至可以制一個汽車X大獎式的黃金卡洛計畫這個計畫值得我們進一步完善比如，誰先賣掉20萬輛真正先進的汽車，就獎勵1億美元，就像你們先前看到的那樣。
+Portions can be opened, so you can now actually have motorcycles drive directly into the performance, or you can even just have an open-air performance, or for intermissions. The balconies all move to go between those configurations, but they also disappear.
+每一部分都能打開, 所以現在可以有摩托車直接開進表演中, 或者你甚至可以來一個露天表演,或終場休息.陽台都移到這些設置中間,但都被隱藏起來.
 
 
 
-Then the legacy airlines can't afford to buy the efficient new planes they desperately need to cut their fuel bills, but if you felt philosophically you wanted to do anything about that, there are ways to finance it. And at the same time to scrap inefficient old planes, so that if they were otherwise to come back in the air, they would waste more oil, and block the uptake of efficient, new planes. Those part inefficient planes are worth more to society dead than alive. We ought to take them out back and shoot them, and put bounty hunters after them. Then there's an important military role.
-傳統航空公司買不起新型的高效飛機他們迫切需要降低燃料費用但是如果你頭腦冷靜，想要解決這一問題現在就有兩個辦法並且與此同時處理掉那些低效的舊飛機因此一旦他們重新飛上天空就會浪費更多的油還會阻礙新型高效飛機的推廣使用這部分低效飛機報廢了反倒對社會更有好處我們應該把它們拖出去槍斃，還要讓它們永不翻身軍隊在接下來的方面起到重要作用
+The proscenium line can also disappear. You can bring enormous objects in, so in fact, the Dallas Theater Company -- their first show will be a play about Charles Lindbergh, and they'll want to bring in a real aircraft.
+前台也可以隱藏起來,你能引進巨大的物件, 所以實際上他們的 --達拉斯劇院 -- 他們的第一場表演將是關於查尔斯林白的一場秀,表演中會用到真正的飛機.
 
 
 
-That in creating the move to high-volume, low-cost commercial production of these kinds of materials, or for that matter, ultra-light steels that are a good backup technology, the military can do the trick it did in turning DARPAnet into the Internet. Just turn it over to the private sector, and we have an Internet. The same for GPS. The same for the modern semi-conductor industry.
-在推動這種大容量低成本材料的商業化生產過程中或著，在超輕型鋼這一優質備份技術上，軍隊可以起到很大作用，就像它曾把國防高級研究計畫局網變成互聯網一樣只是讓私營機構經營，互聯網就誕生了GPS也是這樣來的現代半導體工業也是這樣來的。
+And then it also provides them, in the off-season, the ability to actually rent out their space for entirely different things. This is it from a distance.
+同時,這種設計使得他們, 在淡季時,能夠把場地出租給不同的活動.這是在晚上看起來的樣子 -- 抱歉, 有點距離.
 
 
 
-That is, military science and technology that they need can create the advanced materials-industrial cluster that transforms its civilian economy and gets the country off oil, which would be a huge contribution to eliminating conflict over oil and advancing national and global security.
-也就是說，軍隊所需的軍事科學和技術，可以催生出先進的材料產業群，轉變為民用經濟，使國家擺脫石油的制約有益於解除石油衝突還可以推動國家和全球安全。
+Open up entire portions for different kinds of events. And at night. Again, remove the light enclosure; keep the acoustic enclosure. This is a monster truck show.
+把所有部份都打開來適應不同的活動.在晚上.把燈光道具移開; 聲響不動.這是一個大型卡車展.
 
 
 
-Then we need to retool the car industry and do retraining, and shift the convergence of the energy and ag-value chains to shift faster from hydrocarbons to carbohydrates, and get out of our own way in other ways. And make the transition to more efficient vehicles go faster. But here's how the whole thing fits together.
-接下來，我們需要重新整備汽車產業，提高技能，進行再培訓，做好能源替換和股份價值轉移的銜接工作儘快把燃料從碳氫化合物轉變為碳水化合物並且在其他方面也走出我們自己的路子更快地過渡到高效汽車的時代但這裡是整個過程是如何貫穿在一起的。
+I'm going to show now the last project. This also is an unusual client. They inverted the whole idea of development. They came to us and they said -- unlike normal developers -- they said, "We want to start out by providing a contemporary art museum in Louisville. That's our main goal." And so instead of being a developer that sees an opportunity to make money, they saw an ability to be a catalyst in their downtown.
+接著我要介紹最後一個項目.這也是一個不同尋常的顧客.他們倒置了整個開發的思想.他們找到我們,說 -- 不像普通開發者 --他們說, "我們想建一個現代藝術展覽館在路易斯威爾. 這是我們主要的目標."不是為了有個賺錢的機會,他們想要能夠促進市中心的活動.
 
 
 
-Instead of official forecasts of oil use and oil imports going forever up, they can turn down with the 12 dollars a barrel efficiency, down steeply by adding the supply-side substitutions at 18 bucks, all implemented at slower rates than we've done before when we paid attention. And if we start adding tranches of hydrogen in there, we are rapidly off imports and completely off oil in the 2040s. And the one thing I'd like to point out here is that we've done this before.
-官方預測石油使用量和進口量會無止境地增長，與官方不同的是，他們可以把價格降到每桶12美元，如果在18美元的時候替換供應燃料，可以迅速降低對石油的需求，注意一下你會發現，在我們著手之前，一切已經在緩慢進展著了如果現在開始在那裡添加部分氫氣很快我們就不用進口，到2040年就可以不再使用石油而有件事我想在此指出的是，這一點我們曾經做到過。
+And the fact that they wanted to support the contemporary art museum actually built their pro forma, so they worked in reverse. And that pro forma led us to a mixed-use building that was very large, in order to support their aspirations of the art, but it also opened up opportunities for the art itself to collaborate, interact with commercial spaces that actually artists more and more want to work within.
+實際上他們想要這個現代藝術館建成他們的一種樣本所以他們反其道而行.這個樣板引導我們到一個非常巨大的多功能建築它的目標是支持他們對藝術的熱愛,但同時也增加技術與其他商業空間的合作與交互從而吸引更多的藝術家來這裡工作.
 
 
 
-In this eight-year period, 1977 to 85, when we last paid attention, the economy grew 27 percent, oil use fell 17 percent, oil imports fell 50 percent, oil imports from the Persian Gulf fell 87 percent. They would have been gone if we'd kept that up one more year.
-我們上次注意到，1977年到1985這8年期間，經濟增長了27%，石油使用量卻下降了17%石油進口量下降了50%，波斯灣的石油進口量更是下降了87%如果我們再堅持一年，我們就不再依靠波斯灣進口石油了。
+And it also charged us with thinking about how to have something that was both a single building and a credible sort of sub-building.
+這還要求我們考慮如何設計一個建築, 即是一個單獨的建築同時也好像是一組建築中的一座.
 
 
 
-Well, that was with very old technologies and delivery methods. We could rerun that play a lot better now. And yet what we proved then is the U.S. has more market power than OPEC.
-對啦，當時我們的技術和資訊工具還都很陳舊如果現在再來一次，肯定比當初更好。我們證明了，美國比歐派克擁有更強的市場力量。
+So this is Louisville's skyline, and I'm going to take you through the various constraints that led to the project. First: the physical constraints. We actually had to operate on three discrete sites, all of them well smaller than the size of the building.
+接著我要 -- 這是路易斯维尔地平线 --我要給你們一一介紹完成這個項目的種種限制因素.首先, 物理上的限制. 我們必須在三個不同的地點操作,每個地點, 都比這個建築要小很多.
 
 
 
-Ours is on the demand side. We are the Saudi Arabia of "nega-barrels." (Laughter) We can use less oil faster than they can conveniently sell less oil. (Applause) Whatever your reason for wanting to do this, whether you're concerned about national security or price volatility -- (Laughter) -- or jobs, or the planet, or your grand-kids, it seems to me that this is an oil endgame that we should all be playing to win. Please download your copy, and thank you very much.
-我們是需求方。我們才是沙烏地阿拉伯的“金主”。在他們拿石油牽制我們之前，我們可以減少對石油的需求(掌聲)不論你這樣做的動機是什麼，是擔心國家安全還是害怕價格上漲(笑)是工作，還是地球，還是你的子孫後代依我看，這是石油的臨終時刻了我們都應為了贏得勝利，一起參與歡迎下載這份文件，謝謝大家。
+We had to operate next to the new Muhammad Ali Center, and respect it. We had to operate within the 100-year floodplain. Now, this area floods three to four times a year, and there's a levee behind our site, similar to the ones that broke in New Orleans.
+我們必須在新的穆罕穆得阿里中心邊上施工並且不能影響它.我們必須在這個百年洪泛區施工.現在, 這個地區每年發洪水三到四次,在我們的工地後面有一個泄洪堤和新奧爾良那個壞了的很類似.
 
 
 
+Had to operate behind the I-64 corridor, a street that cuts through the middle of these separate sites. So we're starting to build a sort of nightmare of constraints in a bathtub.
+我們必須在I-64走廊後施工,這是一條從這些不同的地點中穿過的街道.綜合所有這些因素, -- 我們就好像在浴盆中修建一個噩夢的組合體.
 
-(掌聲)
+
+
+Underneath the bathtub are the city's main power lines. And there is a pedestrian corridor that they wanted to add, that would link a series of cultural buildings, and a view corridor -- because this is the historic district -- that they didn't want to obstruct with a new building.
+在浴缸下面,是城市的主要供電系統.他們還想加一個行人過道來把一系列的文化建築連繫起來,還有加一個觀光通道 -- 因為這是一個歷史性的城區 --他們也不像阻礙新的建築.
+
+
+
+(Laughter) And now we're going to add 1.1 million square feet. And if we did the traditional thing, that 1.1 million square feet -- these are the different programs -- the traditional thing would be to identify the public elements, place them on sites,
+(笑聲)現在我們要加上1.1百萬平方英尺.如果照傳統做法, 那1.1 百萬平方英尺 --這些是不同的項目 -- 傳統做法就是確認公共元素, 把他們融入施工.
+
+
+
+and now we'd have a really terrible situation: a public thing in the middle of a bathtub that floods. And then we would size all the other elements -- the different commercial elements: hotel, luxury housing, offices and so forth -- and dump it on top. And we would create something that was unviable.
+現在我們處在一個很糟糕的處境:一個公共的建築在一個漲水的盆地中間.接著我們來看看所有其他的因素 --不同的商業因素:賓館, 豪華住宅, 辦公場地, 等等 ---全都要放進來. 我們將創造一個根本不可能行的通的東西.
+
+
+
+In fact -- and you know this -- this is called the Time Warner Building. (Laughter) So our strategy was very simple. Just lift the entire block, flip some of the elements over, reposition them so they have appropriate views and relationships to downtown, and make circulation connections and reroute the road.
+實際上 -- 你知道的 -- 這就是被稱作時代華納大樓的東西.(笑聲)我們的方法很簡單.就是把整個街區升起來,重組一些元素好讓它們有適當的風景,同時也和市中心有適當的聯繫,然後再連接道路.
+
+
+
+So that's the basic concept, and now I'm going to show you what it leads to.
+這就是基本概念.現在我來展示一下這個概念生成了什麼樣的作品.
+
+
+
+Ok, it seems a very formal, willful gesture, but something derived entirely out of the constraints. And again, when we unveiled it, there was a sort of nervousness that this was about an architect making a statement, not an architect who was attempting to solve a series of problems.
+它看上去是非常正式, 任性而為,但卻是完全符合所有的限制因素.在我們揭幕時, 大家有點緊張因為這是建築師發表一個聲明,而不是企圖解決一系列問題.
+
+
+
+Now, within that center zone, as I said, we have the ability to mix a series of things. So here, this is sort of an x-ray -- the towers are totally developer-driven. They told us the dimensions, the sizes and so forth, and we focused on taking all the public components -- the lobbies, the bars -- everything that different commercial elements would have, and combined it in the center, in the sort of subway map,
+現在, 在那個中心區, 如我所說的,我們能把一系列東西混合起來.所以這裡你能看到的是這些 --有點像x射線 -- 這些高樓完全是按開發商的意願建的. 他們告訴我們尺寸大小等等我們就將注意力集中在所有的公共部分 --大廳, 酒吧,所有不同的商業元素共同具有的東西 --把它們結合在中央, 有點像地鐵地圖,
+
+
+
+in the transfer zone that would also include the contemporary art museum.
+在過渡區包括進這個現代藝術展覽館.
+
+
+
+So it creates a situation like this, where you have artists who can operate within an art space that also has an amazing view on the 22nd floor, but it also has proximity that the curator can either open or close.
+這就形成了這個佈局,可以讓藝術家們從他們的工作室看到22層樓的景觀,同時展覽館館長也能方便地開放或關閉展覽館.
+
+
+
+It allows people on exercise bicycles to be seen, or to see the art, and so forth. It also means that if an artist wants to invade something like a swimming pool, they can begin to do their exhibition in a swimming pool, so they're not forced to always work within the confines of a contemporary gallery space.
+人們看得見騎自行車鍛鍊的人們,而騎車的人也可以瀏覽藝術作品, 等等.這也意味著, 如果藝術家想要選擇游泳池,他們能在游泳池開個畫展,而不需要總是局限於展覽館的空間.
+
+
+
+So, how to build this. It's very simple: it's a chair. So, we begin by building the cores. As we're building the cores, we build the contemporary art museum at grade.
+那麼這個怎麼建呢.非常簡單: 這是一個椅子.先建核心部分.在修建核心部分的同時, 我們在同一層面上修建現代展覽館.
+
+
+
+That allows us to have incredible efficiency and cost efficiency. This is not a high-budget building. The moment the cores get to mid level, we finish the art museum; we put all the mechanical equipment in it; and then we jack it up into the air.
+這使得我們在施工和成本上都有難以置信的高效率.這不是一個花費很高的建築.在核心部分建成一半時,我們完成了藝術館, 然後我們放入所有的機械設備接著把它升起來.
+
+
+
+This is how they build really large aircraft hangars, for instance, the ones that they did for the A380. Finish the cores, finish the meat and you get something that looks like this.
+這種方法常用來生產大型的航天飛機庫,比如說, 他們為A380修的那些.完成了核心部分, 完成了重要的部分你看到的就是這個.
+
+
+
+Now I only have about 30 seconds, so I want to start an animation, and we'll conclude with that. Thank you. (Applause) Chris asked me to add -- the theater is under construction, and this project will start construction in about a year, and finish in 2010. [identify public elements]
+我只有30秒時間, 所以我想開始一個動畫, 以此作為結論.(鼓掌)克里斯讓我額外說明 --這個劇院正在建設之中,這個項目將在一年之後開始修建,將在2010年預期完成.
 
 
 

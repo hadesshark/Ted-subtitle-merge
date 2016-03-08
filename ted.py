@@ -3,6 +3,10 @@ import json
 import os
 import urllib2
 
+def enum(*sequential, **named):
+    enums = dict(zip(sequential, range(len(sequential))), **named)
+    return type('Enum', (), enums)
+
 class TedSubtitle(object):
   """docstring for TedSubtitle"""
   def __init__(self, startOfParagraph = True, startTime = 0, duration = 0, content = ''):
@@ -116,6 +120,22 @@ def IsNewParagraph(isStartOfParagraph, sentence):
   
 
 
+DebugTagType = enum( 'GroupToParagraph', 'MergeSubtitles', 'PrintSubtitles' )
+
+def InitDebugTags():
+  debugTags = []
+  #debugTags.append(DebugTagType.MergeSubtitles)
+  debugTags.append(DebugTagType.PrintSubtitles)
+
+
+  return debugTags
+
+
+debugTags = InitDebugTags()
+
+
+
+   
 talkURL = "http://www.ted.com/talks/richard_st_john_s_8_secrets_of_success"
 ##talkURL = "http://www.ted.com/talks/kenneth_cukier_big_data_is_better_data"
 talkTitle = talkURL.split('/')[-1].replace('_',' ')
@@ -123,7 +143,7 @@ talkTitle = talkURL.split('/')[-1].replace('_',' ')
 #print talkTitle
 #print '\n\n'
 command = "curl -s %s | grep source=facebook | awk -F '=' '{print $3}' | awk -F '&' '{print $1}'" % ( talkURL )
-talkID = '51'#os.popen(command).readlines()[0].strip()
+talkID = '49'#os.popen(command).readlines()[0].strip()
 print "talkID :", talkID
 
 
@@ -181,7 +201,7 @@ if False:
   PrintSubtitles(filteredChineseSubtitles)
 
 
-DEBUG = False
+
 def MergeSubtitles( filteredChineseSubtitles, engSubtitles ):
   
   idxForEnglishSubtitles = 0
@@ -200,37 +220,40 @@ def MergeSubtitles( filteredChineseSubtitles, engSubtitles ):
 
     idxForLastEnglishSubtitles = idxForEnglishSubtitles
 
-    if DEBUG:
+    if DebugTagType.MergeSubtitles in debugTags:
       print chineseSubtitle.content.encode('utf8')
   
+
     while idxForLastEnglishSubtitles < lengthForEnglishSubtitles:
       paragraph.duration = engSubtitles[idxForLastEnglishSubtitles + 1].startTime
       preDurationDifference = currentDurationDifference
       currentDurationDifference = chineseSubtitle.duration - paragraph.duration
 
-      if DEBUG:
+      if DebugTagType.MergeSubtitles in debugTags:
         print chineseSubtitle.duration , paragraph.duration
         print
-      if currentDurationDifference <= 0:
-        if abs(preDurationDifference) < abs(currentDurationDifference):
 
-          break
-        else:
+      if currentDurationDifference <= 0:
+        if abs(preDurationDifference) >= abs(currentDurationDifference):
           idxForLastEnglishSubtitles += 1
-          break
+
+        break
 
       idxForLastEnglishSubtitles += 1
 
-    if DEBUG:
+
+    if DebugTagType.MergeSubtitles in debugTags:
       print "idx: ", idxForEnglishSubtitles, idxForLastEnglishSubtitles
+
     contents = [e.content for e in engSubtitles[idxForEnglishSubtitles:idxForLastEnglishSubtitles]]
     
-    if DEBUG:
+    if DebugTagType.MergeSubtitles in debugTags:
       for k in contents:
         #pass
         print k
 
       print '-' * 20
+
     paragraph.content += ' '.join(contents)
     idxForEnglishSubtitles = idxForLastEnglishSubtitles
 
@@ -241,7 +264,7 @@ def MergeSubtitles( filteredChineseSubtitles, engSubtitles ):
   return filteredEnglishSubtitles
 
 filteredEnglishSubtitles = MergeSubtitles( filteredChineseSubtitles, engSubtitles )
-if True:
+if DebugTagType.PrintSubtitles in debugTags:
   for i in xrange(len(filteredChineseSubtitles)):
     print filteredEnglishSubtitles[i].content
     print filteredChineseSubtitles[i].content.encode('utf8')
