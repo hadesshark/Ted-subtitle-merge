@@ -111,6 +111,7 @@ def IsNewParagraph(isStartOfParagraph, sentence):
   newParagraph = newParagraph and HasContainsEndMark(sentence)
   newParagraph = newParagraph and HasPairChar(sentence.encode('utf8'))
   newParagraph = newParagraph and len(sentence) != 0
+  newParagraph = newParagraph or len(sentence) > 150
   return newParagraph
   
 
@@ -122,7 +123,7 @@ talkTitle = talkURL.split('/')[-1].replace('_',' ')
 #print talkTitle
 #print '\n\n'
 command = "curl -s %s | grep source=facebook | awk -F '=' '{print $3}' | awk -F '&' '{print $1}'" % ( talkURL )
-talkID = '49'#os.popen(command).readlines()[0].strip()
+talkID = '51'#os.popen(command).readlines()[0].strip()
 print "talkID :", talkID
 
 
@@ -143,7 +144,7 @@ def GroupToParagraph(subtitles):
   paragraph = TedSubtitle()
 
   subtitles.insert(0, subtitles[0])
-  
+
   for i in xrange(1,len(subtitles)):
     subtitle = subtitles[i]
 
