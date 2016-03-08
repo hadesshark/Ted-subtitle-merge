@@ -186,7 +186,7 @@ if False:
   PrintSubtitles(filteredChineseSubtitles)
 
 
-
+DEBUG = False
 def MergeSubtitles( filteredChineseSubtitles, engSubtitles ):
 
   idxForEnglishSubtitles = 0
@@ -200,17 +200,18 @@ def MergeSubtitles( filteredChineseSubtitles, engSubtitles ):
 
     idxForLastEnglishSubtitles = idxForEnglishSubtitles
 
-
-    print chineseSubtitle.content.encode('utf8')
+    if DEBUG:
+      print chineseSubtitle.content.encode('utf8')
   
     while idxForLastEnglishSubtitles < lengthForEnglishSubtitles:
-
-      paragraph.duration = engSubtitles[idxForLastEnglishSubtitles].endTime
+   
+      paragraph.duration = engSubtitles[idxForLastEnglishSubtitles + 1].startTime if idxForLastEnglishSubtitles < lengthForEnglishSubtitles - 1 else engSubtitles[idxForLastEnglishSubtitles].endTime
       preDurationDifference = currentDurationDifference
       currentDurationDifference = chineseSubtitle.duration - paragraph.duration
 
-      print chineseSubtitle.duration , paragraph.duration
-      print
+      if DEBUG:
+        print chineseSubtitle.duration , paragraph.duration
+        print
       if currentDurationDifference <= 0:
         if abs(preDurationDifference) < abs(currentDurationDifference):
 
@@ -221,14 +222,16 @@ def MergeSubtitles( filteredChineseSubtitles, engSubtitles ):
 
       idxForLastEnglishSubtitles += 1
 
-    print "idx: ", idxForEnglishSubtitles, idxForLastEnglishSubtitles
+    if DEBUG:
+      print "idx: ", idxForEnglishSubtitles, idxForLastEnglishSubtitles
     contents = [e.content for e in engSubtitles[idxForEnglishSubtitles:idxForLastEnglishSubtitles]]
+    
+    if DEBUG:
+      for k in contents:
+        #pass
+        print k
 
-    for k in contents:
-      #pass
-      print k
-
-    print '-' * 20
+      print '-' * 20
     paragraph.content += ' '.join(contents)
     idxForEnglishSubtitles = idxForLastEnglishSubtitles
 
