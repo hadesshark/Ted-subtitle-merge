@@ -142,20 +142,14 @@ def GroupToParagraph(subtitles):
   paragraphs = []
   paragraph = TedSubtitle()
 
-  for i in xrange(len(subtitles)):
+  subtitles.insert(0, subtitles[0])
+  
+  for i in xrange(1,len(subtitles)):
     subtitle = subtitles[i]
 
-    
-
-    
     if paragraph.startOfParagraph:
-      if i == 0:
-        paragraph.startTime = subtitle.startTime
-      else:
-        paragraph.startTime = subtitles[i-1].startTime
-
-      paragraph.startOfParagraph = False
-    
+      paragraph.startTime = subtitles[i-1].startTime
+      paragraph.startOfParagraph = False    
     
     if IsNewParagraph(subtitle.startOfParagraph, paragraph.content):
       paragraph.TrimNewLine()
