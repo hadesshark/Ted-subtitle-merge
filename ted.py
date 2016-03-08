@@ -7,6 +7,20 @@ def enum(*sequential, **named):
     enums = dict(zip(sequential, range(len(sequential))), **named)
     return type('Enum', (), enums)
 
+
+DebugTagType = enum( 'GroupToParagraph', 'MergeSubtitles', 'PrintSubtitles', 'File' )
+
+def InitDebugTags():
+  debugTags = []
+  #debugTags.append(DebugTagType.GroupToParagraph)
+  #debugTags.append(DebugTagType.MergeSubtitles)
+  #debugTags.append(DebugTagType.PrintSubtitles)
+  debugTags.append(DebugTagType.File)
+
+  return debugTags
+
+debugTags = InitDebugTags()
+
 class TedSubtitle(object):
   """docstring for TedSubtitle"""
   def __init__(self, startOfParagraph = True, startTime = 0, duration = 0, content = ''):
@@ -58,6 +72,8 @@ def json2srt(subtitles):
         t / 1000 / 60 % 60,
         t / 1000 % 60,
         t % 1000)
+
+
 
 
   for i, item in enumerate(subtitles):
@@ -120,18 +136,6 @@ def IsNewParagraph(isStartOfParagraph, sentence):
   
 
 
-DebugTagType = enum( 'GroupToParagraph', 'MergeSubtitles', 'PrintSubtitles' )
-
-def InitDebugTags():
-  debugTags = []
-  #debugTags.append(DebugTagType.MergeSubtitles)
-  debugTags.append(DebugTagType.PrintSubtitles)
-
-
-  return debugTags
-
-
-debugTags = InitDebugTags()
 
 
 
@@ -140,11 +144,11 @@ talkURL = "http://www.ted.com/talks/richard_st_john_s_8_secrets_of_success"
 ##talkURL = "http://www.ted.com/talks/kenneth_cukier_big_data_is_better_data"
 talkTitle = talkURL.split('/')[-1].replace('_',' ')
 
-#print talkTitle
+print talkTitle
+print
 #print '\n\n'
 command = "curl -s %s | grep source=facebook | awk -F '=' '{print $3}' | awk -F '&' '{print $1}'" % ( talkURL )
-talkID = '49'#os.popen(command).readlines()[0].strip()
-print "talkID :", talkID
+talkID = os.popen(command).readlines()[0].strip()
 
 
 chineselanguageCode = 'zh-tw'
@@ -266,9 +270,36 @@ def MergeSubtitles( filteredChineseSubtitles, engSubtitles ):
 filteredEnglishSubtitles = MergeSubtitles( filteredChineseSubtitles, engSubtitles )
 if DebugTagType.PrintSubtitles in debugTags:
   for i in xrange(len(filteredChineseSubtitles)):
+    print i + 1
     print filteredEnglishSubtitles[i].content
-    print filteredChineseSubtitles[i].content.encode('utf8')
-    print
+    print #filteredChineseSubtitles[i].content.encode('utf8')
     print
     print
 
+
+def ReadFileContent(filePath):
+  fileRead = open(filePath, 'r')
+  return fileRead.read().split('\n')
+
+
+def WriteFileContent(filePath, content):
+  fileWrite = open(filePath,'w')
+  fileWrite.write(content) # python will convert \n to os.linesep
+  fileWrite.close() 
+
+if DebugTagType.File in debugTags:
+  filePath = 'practice/49.txt'
+  contents = ReadFileContent(filePath)
+  indexOfFirstSentence = contents.index('1')
+  lengthForChineseSubtitles = len(filteredChineseSubtitles)
+  i = indexOfFirstSentence + 2
+  while i < len(contents):
+    hasTranslate = len(contents[i]) > 0
+    if hasTranslate:
+      contents[i] = filteredChineseSubtitles[i % lengthForChineseSubtitles].content.encode('utf8')
+    
+    i += 5
+    
+  print len(contents), len(filteredEnglishSubtitles), len(filteredChineseSubtitles)
+  for k in contents:
+    print k
