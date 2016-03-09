@@ -14,8 +14,8 @@ def InitDebugTags():
   debugTags = []
   #debugTags.append(DebugTagType.GroupToParagraph)
   #debugTags.append(DebugTagType.MergeSubtitles)
-  debugTags.append(DebugTagType.PrintSubtitles)
-  #debugTags.append(DebugTagType.File)
+  #debugTags.append(DebugTagType.PrintSubtitles)
+  debugTags.append(DebugTagType.File)
 
   return debugTags
 
