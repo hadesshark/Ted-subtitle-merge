@@ -14,7 +14,7 @@ def InitDebugTags():
   debugTags = []
   #debugTags.append(DebugTagType.GroupToParagraph)
   #debugTags.append(DebugTagType.MergeSubtitles)
-  #debugTags.append(DebugTagType.PrintSubtitles)
+  debugTags.append(DebugTagType.PrintSubtitles)
   debugTags.append(DebugTagType.File)
 
   return debugTags
@@ -268,14 +268,23 @@ def MergeSubtitles( filteredChineseSubtitles, engSubtitles ):
   return filteredEnglishSubtitles
 
 filteredEnglishSubtitles = MergeSubtitles( filteredChineseSubtitles, engSubtitles )
-if DebugTagType.PrintSubtitles in debugTags:
-  for i in xrange(len(filteredChineseSubtitles)):
+
+def PrintResult(filteredChineseSubtitles, filteredEnglishSubtitles):
+  indexOfSentenceNumber = 0
+  indexOfFirstSentence = 1
+  indexOfSecondSentence = 2
+  numOfNewLine = 3
+
+  contents = []
+  for i in xrange(len(filteredChineseSubtitles)):    
     print i + 1
     print filteredEnglishSubtitles[i].content
     print #filteredChineseSubtitles[i].content.encode('utf8')
     print
     print
 
+if DebugTagType.PrintSubtitles in debugTags:
+  PrintResult(filteredChineseSubtitles, filteredEnglishSubtitles)
 
 def ReadFileContent(filePath):
   fileRead = open(filePath, 'r')
@@ -293,13 +302,15 @@ if DebugTagType.File in debugTags:
   indexOfFirstSentence = contents.index('1')
   lengthForChineseSubtitles = len(filteredChineseSubtitles)
   i = indexOfFirstSentence + 2
+
+  idxForChineseSubtitles = 0
   while i < len(contents):
     hasTranslate = len(contents[i]) > 0
+
     if hasTranslate:
-      contents[i] = filteredChineseSubtitles[i % lengthForChineseSubtitles].content.encode('utf8')
+      contents[i] = filteredChineseSubtitles[idxForChineseSubtitles].content.encode('utf8')
     
     i += 5
+    idxForChineseSubtitles += 1
     
-  print len(contents), len(filteredEnglishSubtitles), len(filteredChineseSubtitles)
-  for k in contents:
-    print k
+  WriteFileContent(filePath,'\n'.join(contents))
