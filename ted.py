@@ -15,6 +15,7 @@ def InitDebugTags():
   #debugTags.append(DebugTagType.GroupToParagraph)
   #debugTags.append(DebugTagType.MergeSubtitles)
   #debugTags.append(DebugTagType.PrintSubtitles)
+  
   debugTags.append(DebugTagType.File)
 
   return debugTags
@@ -108,6 +109,13 @@ def ResetStartTime(arr):
     arr[i].startTime -= arr[0].startTime
 
   return arr
+
+def IsInt(s):
+  try: 
+    int(s)
+    return True
+  except ValueError:
+    return False
 
 def HasEvenQuotes( content ):
   return content.count('"') % 2 == 0 
@@ -296,21 +304,36 @@ def WriteFileContent(filePath, content):
   fileWrite.write(content) # python will convert \n to os.linesep
   fileWrite.close() 
 
+
 if DebugTagType.File in debugTags:
   filePath = 'practice/49.txt'
-  contents = ReadFileContent(filePath)
-  indexOfFirstSentence = contents.index('1')
+  contentsInFile = ReadFileContent(filePath)
+
   lengthForChineseSubtitles = len(filteredChineseSubtitles)
-  i = indexOfFirstSentence + 2
 
   idxForChineseSubtitles = 0
-  while i < len(contents):
-    hasTranslate = len(contents[i]) > 0
+  i = 0
+  while i < len(contentsInFile):
+    if IsInt(contentsInFile[i]):
+      i += 2
+      hasTranslated = len(contentsInFile[i]) > 0
 
-    if hasTranslate:
-      contents[i] = filteredChineseSubtitles[idxForChineseSubtitles].content.encode('utf8')
+      if hasTranslated:
+        contentsInFile[i] = filteredChineseSubtitles[idxForChineseSubtitles].content.encode('utf8')
+
+      idxForChineseSubtitles += 1
+
+    i += 1
+  # i = indexOfFirstSentence + 2
+
+  # idxForChineseSubtitles = 0
+  # while i < len(contentsInFile):
+  #   hasTranslated = len(contentsInFile[i]) > 0
+
+  #   if hasTranslated:
+  #     contentsInFile[i] = filteredChineseSubtitles[idxForChineseSubtitles].content.encode('utf8')
     
-    i += 5
-    idxForChineseSubtitles += 1
+  #   i += 5
+  #   idxForChineseSubtitles += 1
     
-  WriteFileContent(filePath,'\n'.join(contents))
+  WriteFileContent(filePath,'\n'.join(contentsInFile))
