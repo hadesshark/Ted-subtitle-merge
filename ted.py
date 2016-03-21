@@ -14,8 +14,8 @@ def InitDebugTags():
   debugTags = []
   #debugTags.append(DebugTagType.GroupToParagraph)
   #debugTags.append(DebugTagType.MergeSubtitles)
-  #debugTags.append(DebugTagType.PrintSubtitles)
-  
+
+  debugTags.append(DebugTagType.PrintSubtitles)
   debugTags.append(DebugTagType.File)
 
   return debugTags
@@ -148,12 +148,12 @@ def IsNewParagraph(isStartOfParagraph, sentence):
 
 
    
-talkURL = "http://www.ted.com/talks/richard_st_john_s_8_secrets_of_success"
+talkURL = "http://www.ted.com/talks/sebastian_wernicke_how_to_use_data_to_make_a_hit_tv_show"
 ##talkURL = "http://www.ted.com/talks/kenneth_cukier_big_data_is_better_data"
 talkTitle = talkURL.split('/')[-1].replace('_',' ')
 
-print talkTitle
-print
+
+
 #print '\n\n'
 command = "curl -s %s | grep source=facebook | awk -F '=' '{print $3}' | awk -F '&' '{print $1}'" % ( talkURL )
 talkID = os.popen(command).readlines()[0].strip()
@@ -163,6 +163,8 @@ chineselanguageCode = 'zh-tw'
 englishlanguageCode = 'en'
 
 
+baseDirPath = 'practice/'
+filePath = '%s/%s.txt' % (baseDirPath, str(talkID))
 
 engSubtitles = ResetStartTime(GetSubtitles( talkID, englishlanguageCode ))
 chineseSubtitles = ResetStartTime(GetSubtitles( talkID, chineselanguageCode ))
@@ -199,7 +201,9 @@ def GroupToParagraph(subtitles):
       
 
   if lastAddedIndex < len(subtitles):
+
     paragraphs.append(paragraph)
+
 
 
   return paragraphs
@@ -209,7 +213,7 @@ def GroupToParagraph(subtitles):
 
 filteredChineseSubtitles = GroupToParagraph(chineseSubtitles)
 
-if False:
+if DebugTagType.GroupToParagraph in debugTags:
   PrintSubtitles(filteredChineseSubtitles)
 
 
@@ -277,22 +281,7 @@ def MergeSubtitles( filteredChineseSubtitles, engSubtitles ):
 
 filteredEnglishSubtitles = MergeSubtitles( filteredChineseSubtitles, engSubtitles )
 
-def PrintResult(filteredChineseSubtitles, filteredEnglishSubtitles):
-  indexOfSentenceNumber = 0
-  indexOfFirstSentence = 1
-  indexOfSecondSentence = 2
-  numOfNewLine = 3
 
-  contents = []
-  for i in xrange(len(filteredChineseSubtitles)):    
-    print i + 1
-    print filteredEnglishSubtitles[i].content
-    print #filteredChineseSubtitles[i].content.encode('utf8')
-    print
-    print
-
-if DebugTagType.PrintSubtitles in debugTags:
-  PrintResult(filteredChineseSubtitles, filteredEnglishSubtitles)
 
 def ReadFileContent(filePath):
   fileRead = open(filePath, 'r')
@@ -304,9 +293,21 @@ def WriteFileContent(filePath, content):
   fileWrite.write(content) # python will convert \n to os.linesep
   fileWrite.close() 
 
+def PrintResult(filteredChineseSubtitles, filteredEnglishSubtitles):
+  contents = [ talkTitle, '\n', '\n' ]
+
+  for i in xrange(len(filteredChineseSubtitles)):    
+    contents += [ str(i+1), filteredEnglishSubtitles[i].content, '\n', '\n', '\n' ]
+
+  WriteFileContent(filePath,'\n'.join(contents))
+
+
+if DebugTagType.PrintSubtitles in debugTags:
+  PrintResult(filteredChineseSubtitles, filteredEnglishSubtitles)
+
 
 if DebugTagType.File in debugTags:
-  filePath = 'practice/49.txt'
+  
   contentsInFile = ReadFileContent(filePath)
 
   lengthForChineseSubtitles = len(filteredChineseSubtitles)
@@ -324,16 +325,6 @@ if DebugTagType.File in debugTags:
       idxForChineseSubtitles += 1
 
     i += 1
-  # i = indexOfFirstSentence + 2
-
-  # idxForChineseSubtitles = 0
-  # while i < len(contentsInFile):
-  #   hasTranslated = len(contentsInFile[i]) > 0
-
-  #   if hasTranslated:
-  #     contentsInFile[i] = filteredChineseSubtitles[idxForChineseSubtitles].content.encode('utf8')
-    
-  #   i += 5
-  #   idxForChineseSubtitles += 1
+  
     
   WriteFileContent(filePath,'\n'.join(contentsInFile))
