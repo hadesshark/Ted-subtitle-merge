@@ -1,8 +1,7 @@
 # -*- coding: utf8 -*-
 import json
 import os
-# import urllib2
-import urllib.request as urllib2
+import urllib as urllib2
 
 
 def enum(*sequential, **named):
@@ -150,9 +149,9 @@ talkURL = "http://www.ted.com/talks/sebastian_wernicke_how_to_use_data_to_make_a
 talkTitle = talkURL.split('/')[-1].replace('_', ' ')
 
 # print '\n\n'
-command = "curl -s %s | grep source=facebook | awk -F '=' '{print $3}' | awk -F '&' '{print $1}'" % (
+command = "curl -s %s | findstr source=facebook | awk -F '=' '{print $3}' | awk -F '&' '{print $1}'" % (
     talkURL)
-talkID = os.popen(command).readlines()  # [-1].strip()  # have problem
+talkID = os.popen(command).readlines()[-1].strip()  # have problem
 
 chineselanguageCode = 'zh-tw'
 englishlanguageCode = 'en'
